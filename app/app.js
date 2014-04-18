@@ -1,9 +1,14 @@
 
+'use strict';
+
 var app = angular.module('Room24', [
    'ngAnimate',
    'ngRoute',
    'ngSanitize',
-   'ngTouch']);
+   'ngTouch',
+
+   'Lobby.Activity'
+]);
 
 app.config(['$routeProvider', function($routeProvider) {
 
@@ -16,4 +21,4 @@ app.config(['$routeProvider', function($routeProvider) {
 
 }]);
 
-app.controller('HomeController', ['$scope', R24.HomeController]);
+app.controller('HomeController', ['$scope', '$rootScope', R24.HomeController]);

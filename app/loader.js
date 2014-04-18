@@ -17,7 +17,11 @@ require(['libs/angular.min'], function() {
        'libs/angular-sanitize.min',
        'libs/angular-touch.min'], function() {
 
-       require(['home/controller'], function() {
+       require([
+           'home/controller',
+           'activity/lobby.activity',
+           'activity/errorMessageDirective',
+           'activity/loadingIndicatorDirective'], function() {
 
            require(['app'], function() {
                angular.bootstrap(document, ['Room24']);
