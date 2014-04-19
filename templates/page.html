@@ -1,19 +1,14 @@
 
 <header>
 
-    <menu type="context">
-        <nav>
-            <a href="#/about">About us</a>
-            <a href="#/">Contact</a>
-        </nav>
-        <nav>
-            <a href=""></a>
-        </nav>
+    <menu>
+        <menuitem><a href="#/about">About us</a></menuitem>
+        <menuitem><a href="#/">Contact</a></menuitem>
     </menu>
 
     <nav>
         <ul>
-            <li ng-repeat="category in categories"><a href="#/category/{{category.id}}">{{category.name}}</a></li>
+            <li ng-repeat="category in categories"><a ng-class="{ active: isActive({{category.id}}) }" href="#/category/{{category.id}}">{{category.name}}</a></li>
         </ul>
     </nav>
 

@@ -1,13 +1,18 @@
 
 $page-background-color: #1a1b24;
-$text-header-color: #33cccc;
-$text-highlight-color: #33ccff;
+
+$font-regular: 300 14px/21px 'Helvetica Neue';
+$font-bold: 600 14px/21px 'Helvetica Neue';
+$font-thin: 100 50px/52px 'Helvetica Neue';
+
+$text-header-color: #33ccff;
+$text-highlight-color: #33cccc;
 $text-menu-color: #256682;
 $text-menu-highlight-color: #fff;
 $text-body-color: #cccccc;
 
-$font-regular: 300 12px/30px 'Helvetica Neue';
-$font-bold: 600 12px/30px 'Helvetica Neue';
-$font-thin: 100 12px/30px 'Helvetica Neue';
+* { box-sizing: border-box; }
+
+a { color: #fff }
 
 @import "page";

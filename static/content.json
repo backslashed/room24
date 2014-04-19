@@ -3,7 +3,7 @@
     "pages": {
         "home" : {
             "title": "",
-            "body": "<h1>We are an independent music production studio</h1>"
+            "body": "<h1>We are an independent music production studio, producing original composition and sound design.</h1>"
         },
 
         "about": {
@@ -16,31 +16,31 @@
         {
             "id": "1",
             "name": "Custom compositions",
-            "body": "1We are passionate about making sounds that tell a story",
+            "body": "<h1>1We are passionate about making sounds that tell a story</h1>",
             "image": "url"
         },
         {
             "id": "2",
             "name": "Sound Design",
-            "body": "2We are passionate about making sounds that tell a story",
+            "body": "<h1>2We are passionate about making sounds that tell a story</h1>",
             "image": ""
         },
         {
             "id": "3",
             "name": "Live Sessions",
-            "body": "3We are passionate about making sounds that tell a story",
+            "body": "<h1>3We are passionate about making sounds that tell a story</h1>",
             "image": ""
         },
         {
             "id": "4",
             "name": "Sound Experience",
-            "body": "4We are passionate about making sounds that tell a story",
+            "body": "<h1>4We are passionate about making sounds that tell a story</h1>",
             "image": ""
         },
         {
             "id": "5",
             "name": "Music supervision",
-            "body": "We are passionate about making sounds that tell a story",
+            "body": "<h1>We are passionate about making sounds that tell a story</h1>",
             "image": ""
         }
     ],

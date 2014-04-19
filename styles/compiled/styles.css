@@ -1,4 +1,43 @@
+* {
+  box-sizing: border-box; }
+
+a {
+  color: white; }
+
 body {
   background-color: #1a1b24;
   color: #cccccc;
-  font: 300 12px/30px "Helvetica Neue"; }
+  font: 300 14px/21px "Helvetica Neue"; }
+
+header menu > menuitem > a {
+  font: 300 14px/21px "Helvetica Neue";
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none; }
+header nav ul {
+  margin: 0;
+  padding: 0; }
+  header nav ul li {
+    list-style: none;
+    float: left;
+    margin-right: 30px; }
+    header nav ul li a {
+      font: 600 14px/21px "Helvetica Neue";
+      color: #256682;
+      display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: 1px solid transparent; }
+      header nav ul li a:hover, header nav ul li a.active {
+        color: white;
+        border-color: white; }
+  header nav ul:after {
+    content: '.';
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both; }
+
+main h1 {
+  font: 100 50px/52px "Helvetica Neue";
+  color: #33ccff; }

@@ -1,14 +1,14 @@
 
 R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', function($http, $rootScope, $timeout, $q, API_URI) {
 
-    var delayTimeout,
+    var _delayTimeout,
         _contentCache = void 0,
         _ERROR_MSG    = "Error 404: Can not retrieve data. Please try again."
 
     function setActivity(active, msg) {
-        $timeout.cancel(delayTimeout);
+        $timeout.cancel(_delayTimeout);
 
-        delayTimeout = $timeout(function() {
+        _delayTimeout = $timeout(function() {
             $rootScope.network = {
                 active: active,
                 error: angular.isUndefined(msg) ? false : msg
@@ -28,7 +28,7 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
                     return result;
 
                 }, function() {
-                    setActivity(false, '404 - A network error has occurred. Please try refreshing');
+                    setActivity(false, _ERROR_MSG);
                 });
 
         } else {

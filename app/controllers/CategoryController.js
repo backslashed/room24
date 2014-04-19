@@ -9,4 +9,5 @@ R24.CategoryController = ['$scope', '$stateParams', 'DataSource', function($scop
             $scope.items = response.items;
         });
 
+    $scope.activeCategoryId = cId;
 }];

@@ -4,3 +4,63 @@ body {
   color: $text-body-color;
   font: $font-regular;
 }
+
+header {
+
+  menu > menuitem > a {
+        font: $font-regular;
+        color: $text-menu-highlight-color;
+        text-transform: uppercase;
+        text-decoration: none;
+  }
+
+  nav {
+
+    ul {
+
+      margin: 0;
+      padding: 0;
+
+      li {
+
+        list-style: none;
+        float: left;
+        margin-right: 30px;
+
+        a {
+          font: $font-bold;
+          color: $text-menu-color;
+          display: block;
+          text-decoration: none;
+          text-transform: uppercase;
+          border-bottom: 1px solid transparent;
+
+          &:hover, &.active {
+            color: $text-menu-highlight-color;
+            border-color: $text-menu-highlight-color;
+          }
+        }
+
+      }
+
+      &:after {
+        content: '.';
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+      }
+
+    }
+
+  }
+}
+
+main {
+
+  h1 {
+    font: $font-thin;
+    color: $text-header-color;
+  }
+
+}
