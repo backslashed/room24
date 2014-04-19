@@ -30,21 +30,36 @@
         [error-message].active-add.active-add-active, [loading-indicator].active-add.active-add-active {
             opacity: 1;
         }
+
     </style>
 </head>
 
-<body>
-    <menu type="context">
-        <nav>
-            <a href="/about">About us</a>
-            <a href="#">Contact</a>
-        </nav>
-        <nav>
-            <a href=""></a>
-        </nav>
-    </menu>
+<body ng-controller="MainController">
 
-    <main id="view" ng-view></main>
+    <header>
+
+        <menu type="context">
+            <nav>
+                <a href="#/about">About us</a>
+                <a href="#">Contact</a>
+            </nav>
+            <nav>
+                <a href=""></a>
+            </nav>
+        </menu>
+
+        <nav>
+            <ul>
+                <li ng-repeat="category in categories"><a href="#/category/{{category.id}}">{{category.name}}</a></li>
+            </ul>
+        </nav>
+
+        <strong ng-show="network.error">{{network.error}}</strong>
+        <strong ng-show="network.loading">Loading...</strong>
+
+    </header>
+
+    <main id="view" ui-view></main>
 
     <script type="text/javascript" src="libs/require.js" data-main="app/loader"></script>
 </body>

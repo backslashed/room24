@@ -15,10 +15,15 @@ require(['libs/angular.min'], function() {
        'libs/angular-animate.min',
        'libs/angular-route.min',
        'libs/angular-sanitize.min',
-       'libs/angular-touch.min'], function() {
+       'libs/angular-touch.min',
+       'libs/angular-ui-router.min'], function() {
 
        require([
-           'home/controller',
+           'controllers/HomeController',
+           'controllers/MainController',
+           'controllers/CategoryController',
+           'controllers/CategoryItemController',
+
            'providers/DataSourceProvider'], function() {
 
            require(['app'], function() {
