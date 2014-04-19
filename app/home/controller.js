@@ -1,15 +1,9 @@
 
-R24.HomeController = function($scope, $rootScope) {
+R24.HomeController = function($scope, $rootScope, dataSource) {
 
-    $scope.error = function(args) {
-        if(angular.isUndefined(args)) {
-            $rootScope.$emit('error:message', { message: 'hi', timeout: 5 });
-        } else {
-            $rootScope.$emit('error:clear');
-        }
-    }
+    dataSource.getContent().
+        then(function(response) {
+            $scope.content = !angular.isUndefined(response) ? response.data : angular.noop;
+        });
 
-    $scope.loading = function(args) {
-        $rootScope.$emit(angular.isUndefined(args) ? 'network:loading' : 'network:idle');
-    }
 }

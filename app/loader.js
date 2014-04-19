@@ -19,9 +19,7 @@ require(['libs/angular.min'], function() {
 
        require([
            'home/controller',
-           'activity/lobby.activity',
-           'activity/errorMessageDirective',
-           'activity/loadingIndicatorDirective'], function() {
+           'providers/DataSourceProvider'], function() {
 
            require(['app'], function() {
                angular.bootstrap(document, ['Room24']);

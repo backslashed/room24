@@ -1,10 +1,9 @@
 <h1>Home</h1>
 
-<strong error-message error-class="active"></strong>
-<a ng-click="error()">Trigger error</a>
-<a ng-click="error('success')">Trigger success</a>
+<span ng-show="network.active">ACTIVE</span>
+<span ng-show="network.error">{{network.error}}</span>
 
+<ul>
+    <li ng-repeat="category in content.categories">{{category.name}}</li>
+</ul>
 
-<div loading-indicator loading-class="active">Loading...</div>
-<a ng-click="loading()">Trigger loading</a>
-<a ng-click="loading('done')">Trigger done loading</a>
