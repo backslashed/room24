@@ -1,70 +1,94 @@
 
 {
     "pages": {
-        "home": {
-            "heading": "We are an independent music production studio, producing original composition and sound design."
+        "home" : {
+            "title": "",
+            "body": "<h1>We are an independent music production studio</h1>"
         },
 
         "about": {
-            "heading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor libero sapien. Nunc sit amet malesuada metus. Vivamus commodo nunc et sagittis feugiat. Fusce feugiat lobortis elit, at lobortis dolor tristique quis. Suspendisse fermentum dapibus ante elementum ultricies. Aliquam ac augue sed lorem sagittis semper. Vestibulum cursus, neque eget tincidunt rhoncus, diam quam fermentum nulla, at tristique arcu dui ut nisi. Donec fermentum ac augue non pulvinar."
+            "title": "About Us",
+            "body": "<h2>Lorem ipsum dolorem</h2>"
         }
     },
 
-    "categories": {
-        "Custom compositions": {
+    "categories": [
+        {
+            "id": "1",
+            "name": "Custom compositions",
+            "body": "We are passionate about making sounds that tell a story",
+            "image": "url"
+        },
+        {
+            "id": "2",
+            "name": "Sound Design",
+            "body": "We are passionate about making sounds that tell a story",
             "image": ""
         },
-
-        "Sound design": {
-            "image" : "",
-            "heading": "We are passionate about making sounds that tell a story",
-
-            "items": {
-                "Flora": {
-                    "client": "Agency: Grey",
-                    "type": "Internal Brand Video",
-                    "director": "Steven Ghery",
-                    "image": "",
-                    "video_id": "",
-                    "description": ""
-                },
-
-                "Flora 2": {
-                    "client": "Agency: Grey 2",
-                    "type": "Internal Brand Video 2",
-                    "image": "",
-                    "video_id": "",
-                    "description": ""
-                },
-
-                "Flora 3": {
-                    "client": "Agency: Grey 3",
-                    "type": "Internal Brand Video 3",
-                    "image": "",
-                    "video_id": "",
-                    "description": ""
-                },
-
-                "Flora 4": {
-                    "client": "Agency: Grey 4",
-                    "type": "Internal Brand Video 4",
-                    "image": "",
-                    "video_id": "",
-                    "description": ""
-                }
-            }
+        {
+            "id": "3",
+            "name": "Live Sessions",
+            "body": "We are passionate about making sounds that tell a story",
+            "image": ""
         },
-
-        "Live sessions": {
-            "image" : ""
+        {
+            "id": "4",
+            "name": "Sound Experience",
+            "body": "We are passionate about making sounds that tell a story",
+            "image": ""
         },
-
-        "Sound experience": {
-            "image" : ""
-        },
-
-        "Music supervision": {
-            "image" : ""
+        {
+            "id": "5",
+            "name": "Music supervision",
+            "body": "We are passionate about making sounds that tell a story",
+            "image": ""
         }
-}
+    ],
+
+    "items": [
+        {
+            "id": "1",
+            "category_id": "1",
+            "media_url": "A3bej12",
+            "title": "GE Brand Movie",
+            "client": "General Electric",
+            "director": "Steve Ghrey",
+            "agency": "Mother",
+            "body": "Lorem ipsum dolorem, sit amet dinosaurum",
+            "description": "Internal Brand Video"
+        },
+        {
+            "id": "1",
+            "category_id": "1",
+            "media_url": "A3bej12",
+            "title": "GE Brand Movie 2",
+            "client": "General Electric",
+            "director": "Steve Ghrey",
+            "agency": "Mother",
+            "body": "Lorem ipsum dolorem, sit amet dinosaurum",
+            "description": "Internal Brand Video"
+        },
+        {
+            "id": "1",
+            "category_id": "1",
+            "media_url": "A3bej12",
+            "title": "GE Brand Movie 3",
+            "client": "General Electric",
+            "director": "Steve Ghrey",
+            "agency": "Mother",
+            "body": "Lorem ipsum dolorem, sit amet dinosaurum",
+            "description": "Internal Brand Video"
+        },
+        {
+            "id": "2",
+            "category_id": "1",
+            "media_url": "A3bej12",
+            "title": "GE Sound Effect",
+            "client": "General Electric",
+            "director": "Steve Ghrey",
+            "agency": "Mother",
+            "body": "Lorem ipsum dolorem, sit amet dinosaurum",
+            "description": "Internal Brand Video"
+        }
+    ]
 }
