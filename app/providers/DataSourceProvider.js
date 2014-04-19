@@ -42,15 +42,39 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
     return {
         setActivity: setActivity,
 
+        getPage: function(pageName) {
+            return getContent().then(function(response) {
+                if(angular.isUndefined(response)) return;
+
+                return response.data.pages[pageName];
+            })
+        },
+
         getCategories: function() {
-            var defer = $q.defer();
+            return getContent().then(function(response) {
+                return angular.isUndefined(response) ? angular.noop : response.data.categories;
+            });
+        },
 
-            getContent().
-                then(function(response) {
-                    defer.resolve(angular.isUndefined(response) ? angular.noop : response.data.categories);
-                });
+        getCategory: function(categoryId) {
+            return getContent().then(function(response) {
+                if(angular.isUndefined(response)) return;
 
-            return defer.promise;
+                return {
+                    items: _(response.data.items).filter(function(item) {
+                        return item.category_id === categoryId;
+                    }),
+                    category: _(response.data.categories).findWhere({ id: categoryId })
+                }
+            });
+        },
+
+        getItem: function(itemId) {
+            return getContent().then(function(response) {
+                if(angular.isUndefined(response)) return;
+
+                return _(response.data.items).findWhere({ id: itemId });
+            });
         }
     }
 }];

@@ -1,4 +1,12 @@
 
-R24.CategoryController = ['$scope', '$stateParams', function($scope, $stateParams) {
-    $scope.cat = $stateParams['category_id'];
+R24.CategoryController = ['$scope', '$stateParams', 'DataSource', function($scope, $stateParams, dataSource) {
+
+    var cId = $stateParams['category_id'];
+
+    dataSource.getCategory(cId).
+        then(function(response) {
+            $scope.items = response.items;
+            $scope.category = response.category;
+        });
+
 }];

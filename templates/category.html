@@ -1,1 +1,8 @@
-Category {{cat}}
+
+<span ng-bind-html="category.body"></span>
+
+<nav>
+    <ul>
+        <li ng-repeat="item in items"><a href="#/category/{{category.id}}/{{item.id}}">{{item.title}}</a></li>
+    </ul>
+</nav>

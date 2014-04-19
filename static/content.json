@@ -16,25 +16,25 @@
         {
             "id": "1",
             "name": "Custom compositions",
-            "body": "We are passionate about making sounds that tell a story",
+            "body": "1We are passionate about making sounds that tell a story",
             "image": "url"
         },
         {
             "id": "2",
             "name": "Sound Design",
-            "body": "We are passionate about making sounds that tell a story",
+            "body": "2We are passionate about making sounds that tell a story",
             "image": ""
         },
         {
             "id": "3",
             "name": "Live Sessions",
-            "body": "We are passionate about making sounds that tell a story",
+            "body": "3We are passionate about making sounds that tell a story",
             "image": ""
         },
         {
             "id": "4",
             "name": "Sound Experience",
-            "body": "We are passionate about making sounds that tell a story",
+            "body": "4We are passionate about making sounds that tell a story",
             "image": ""
         },
         {
@@ -54,40 +54,40 @@
             "client": "General Electric",
             "director": "Steve Ghrey",
             "agency": "Mother",
-            "body": "Lorem ipsum dolorem, sit amet dinosaurum",
-            "description": "Internal Brand Video"
-        },
-        {
-            "id": "1",
-            "category_id": "1",
-            "media_url": "A3bej12",
-            "title": "GE Brand Movie 2",
-            "client": "General Electric",
-            "director": "Steve Ghrey",
-            "agency": "Mother",
-            "body": "Lorem ipsum dolorem, sit amet dinosaurum",
-            "description": "Internal Brand Video"
-        },
-        {
-            "id": "1",
-            "category_id": "1",
-            "media_url": "A3bej12",
-            "title": "GE Brand Movie 3",
-            "client": "General Electric",
-            "director": "Steve Ghrey",
-            "agency": "Mother",
-            "body": "Lorem ipsum dolorem, sit amet dinosaurum",
+            "body": "111Lorem ipsum dolorem, sit amet dinosaurum",
             "description": "Internal Brand Video"
         },
         {
             "id": "2",
             "category_id": "1",
             "media_url": "A3bej12",
+            "title": "GE Brand Movie 2",
+            "client": "General Electric",
+            "director": "Steve Ghrey",
+            "agency": "Mother",
+            "body": "222Lorem ipsum dolorem, sit amet dinosaurum",
+            "description": "Internal Brand Video"
+        },
+        {
+            "id": "3",
+            "category_id": "1",
+            "media_url": "A3bej12",
+            "title": "GE Brand Movie 3",
+            "client": "General Electric",
+            "director": "Steve Ghrey",
+            "agency": "Mother",
+            "body": "333Lorem ipsum dolorem, sit amet dinosaurum",
+            "description": "Internal Brand Video"
+        },
+        {
+            "id": "4",
+            "category_id": "2",
+            "media_url": "A3bej12",
             "title": "GE Sound Effect",
             "client": "General Electric",
             "director": "Steve Ghrey",
             "agency": "Mother",
-            "body": "Lorem ipsum dolorem, sit amet dinosaurum",
+            "body": "444Lorem ipsum dolorem, sit amet dinosaurum",
             "description": "Internal Brand Video"
         }
     ]

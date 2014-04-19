@@ -6,19 +6,9 @@ var app = angular.module('Room24', [
    'ngRoute',
    'ngSanitize',
    'ngTouch',
+   'ngSanitize',
    'ui.router'
 ]);
-
-
-/*
- * /
- * /category/:category_id
- * /category/:category_id/:item_id
- *
- * /about
- *
- */
-
 
 app.
     constant('API_URI', 'static/content.json').
@@ -27,26 +17,31 @@ app.
         $urlRouterProvider.otherwise('/');
 
         $stateProvider.
-            state('home', {
+            state('page', {
                 url: '/',
-                templateUrl: 'templates/home.html',
+                templateUrl: 'templates/page.html',
                 controller: 'HomeController'
             }).
-            state('home.category', {
+            state('page.category', {
                 url: 'category/:category_id',
                 templateUrl: 'templates/category.html',
                 controller: 'CategoryController'
             }).
-            state('home.item', {
+            state('page.item', {
                 url: 'category/:category_id/:item_id',
                 templateUrl: 'templates/category.item.html',
                 controller: 'CategoryItemController'
+            }).
+            state('page.about', {
+                url: 'about',
+                templateUrl: 'templates/about.html',
+                controller: 'AboutController'
             });
     }]).
 
     factory('DataSource', R24.DataSourceProvider).
 
-    controller('MainController', R24.MainController).
     controller('HomeController', R24.HomeController).
+    controller('AboutController', R24.AboutController).
     controller('CategoryController', R24.CategoryController).
     controller('CategoryItemController', R24.CategoryItemController);

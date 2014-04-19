@@ -1,0 +1,34 @@
+
+<header>
+
+    <menu type="context">
+        <nav>
+            <a href="#/about">About us</a>
+            <a href="#/">Contact</a>
+        </nav>
+        <nav>
+            <a href=""></a>
+        </nav>
+    </menu>
+
+    <nav>
+        <ul>
+            <li ng-repeat="category in categories"><a href="#/category/{{category.id}}">{{category.name}}</a></li>
+        </ul>
+    </nav>
+
+    <strong ng-show="network.error">{{network.error}}</strong>
+    <strong ng-show="network.loading">Loading...</strong>
+
+</header>
+
+<main ui-view>
+    <span ng-bind-html="content.title"></span>
+    <span ng-bind-html="content.body"></span>
+
+    <nav class="boxes">
+        <ul>
+            <li ng-repeat="category in categories"><a href="#/category/{{category.id}}">{{category.name}}</a></li>
+        </ul>
+    </nav>
+</main>

@@ -34,33 +34,10 @@
     </style>
 </head>
 
-<body ng-controller="MainController">
+<body>
 
-    <header>
-
-        <menu type="context">
-            <nav>
-                <a href="#/about">About us</a>
-                <a href="#">Contact</a>
-            </nav>
-            <nav>
-                <a href=""></a>
-            </nav>
-        </menu>
-
-        <nav>
-            <ul>
-                <li ng-repeat="category in categories"><a href="#/category/{{category.id}}">{{category.name}}</a></li>
-            </ul>
-        </nav>
-
-        <strong ng-show="network.error">{{network.error}}</strong>
-        <strong ng-show="network.loading">Loading...</strong>
-
-    </header>
-
-    <main id="view" ui-view></main>
-
+    <div ui-view></div>
     <script type="text/javascript" src="libs/require.js" data-main="app/loader"></script>
+
 </body>
 </html>

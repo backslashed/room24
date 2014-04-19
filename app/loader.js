@@ -16,11 +16,12 @@ require(['libs/angular.min'], function() {
        'libs/angular-route.min',
        'libs/angular-sanitize.min',
        'libs/angular-touch.min',
-       'libs/angular-ui-router.min'], function() {
+       'libs/angular-ui-router.min',
+       'libs/underscore-min'], function() {
 
        require([
            'controllers/HomeController',
-           'controllers/MainController',
+           'controllers/AboutController',
            'controllers/CategoryController',
            'controllers/CategoryItemController',
 
