@@ -4,6 +4,6 @@
 <span ng-show="network.error">{{network.error}}</span>
 
 <ul>
-    <li ng-repeat="category in content.categories">{{category.name}}</li>
+    <li ng-repeat="(key, value) in content.categories">{{key}}</li>
 </ul>
 

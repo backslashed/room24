@@ -20,6 +20,6 @@ app.
             otherwise('/');
     }]).
 
-    factory('DataSource', ['$http', '$rootScope', 'API_URI', R24.DataSourceProvider]).
+    factory('DataSource', R24.DataSourceProvider).
 
-    controller('HomeController', ['$scope', '$rootScope', 'DataSource', R24.HomeController]);
+    controller('HomeController', R24.HomeController);
