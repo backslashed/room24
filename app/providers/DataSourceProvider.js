@@ -44,36 +44,32 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
 
         getPage: function(pageName) {
             return getContent().then(function(response) {
-                if(angular.isUndefined(response)) return;
-
-                return response.data.pages[pageName];
+                return angular.isUndefined(response) ?
+                    angular.noop : response.data.pages[pageName];
             })
         },
 
         getCategories: function() {
             return getContent().then(function(response) {
-                return angular.isUndefined(response) ? angular.noop : response.data.categories;
+                return angular.isUndefined(response) ?
+                    angular.noop : response.data.categories;
             });
         },
 
         getCategory: function(categoryId) {
             return getContent().then(function(response) {
-                if(angular.isUndefined(response)) return;
-
-                return {
-                    items: _(response.data.items).filter(function(item) {
-                        return item.category_id === categoryId;
-                    }),
-                    category: _(response.data.categories).findWhere({ id: categoryId })
-                }
+                return angular.isUndefined(response) ?
+                    angular.noop : {
+                        items: _(response.data.items).where({ category_id: categoryId}),
+                        category: _(response.data.categories).findWhere({ id: categoryId })
+                    }
             });
         },
 
         getItem: function(itemId) {
             return getContent().then(function(response) {
-                if(angular.isUndefined(response)) return;
-
-                return _(response.data.items).findWhere({ id: itemId });
+                return angular.isUndefined(response) ?
+                    angular.noop : _(response.data.items).findWhere({ id: itemId });
             });
         }
     }
