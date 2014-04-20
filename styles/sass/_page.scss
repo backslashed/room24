@@ -3,18 +3,25 @@ body {
   background-color: $page-background-color;
   color: $text-body-color;
   font: $font-regular;
+  margin: 0;
 }
 
 a { color: $text-menu-highlight-color; }
 
-#page {
+section.content {
   margin: 0 auto;
   width: 100%;
   max-width: 960px;
 }
 
-header {
+section.contact {
+  background: #000;
+  width: 100%;
+  height: 80px;
+  display: block;
+}
 
+header {
   position: relative;
   height: 95px;
 
@@ -32,6 +39,8 @@ header {
     margin-bottom: 13px;
 
     menuitem {
+      cursor: pointer;
+
       &:first-child {
         margin-right: 30px;
       }
@@ -45,7 +54,6 @@ header {
   }
 
   nav {
-
     ul {
       margin: 0;
       padding: 0;
@@ -80,12 +88,10 @@ header {
       }
 
     }
-
   }
 }
 
 main {
-
   h1 {
     font: $font-thin;
     color: $text-header-color;

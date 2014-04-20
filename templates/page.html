@@ -1,38 +1,44 @@
+<section class="contact" ng-class="{ active: contactVisible }">
+    asd qwe asd
+</section>
 
-<header>
+<section class="content">
+    <header>
+        <menu>
+            <menuitem ng-show="!!categories"><a href="#/about">About us</a></menuitem>
+            <menuitem ng-show="!!categories"><a ng-click="contactVisible = !contactVisible">Contact</a></menuitem>
+        </menu>
 
-    <menu ng-show="!!categories">
-        <menuitem><a href="#/about">About us</a></menuitem>
-        <menuitem><a href="#/">Contact</a></menuitem>
-    </menu>
+        <nav>
+            <ul>
+                <li ng-repeat="category in categories" ng-animate="">
+                    <a ng-class="{ active: isActive('{{category.id}}') }" href="#/category/{{category.id}}">
+                        {{category.title}}
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-    <nav>
-        <ul>
-            <li ng-repeat="category in categories" ng-animate="">
-                <a ng-class="{ active: isActive('{{category.id}}') }" href="#/category/{{category.id}}">
-                    {{category.name}}
-                </a>
-            </li>
-        </ul>
-    </nav>
-    
-    <figure><a href="#/"><img src="assets/logo.png" alt="Room24 logo"/></a></figure>
+        <figure><a href="#/"><img src="assets/logo.png" alt="Room24 logo"/></a></figure>
 
-    <strong ng-show="network.error">{{network.error}}</strong>
-    <strong ng-show="network.active">Loading...</strong>
+        <strong ng-show="network.error">{{network.error}}</strong>
+        <strong ng-show="network.active">Loading...</strong>
 
-</header>
+    </header>
 
-<main ui-view>
-    <section class="body" ng-bind-html="content.body"></section>
+    <main id="sub-view" ui-view>
+        <section class="body" ng-bind-html="content.body"></section>
 
-    <nav class="boxes">
-        <ul>
-            <li ng-repeat="category in categories">
-                <img ng-src="{{category.thumbnail}}" alt="{{category.name}}" />
-                <a href="#/category/{{category.id}}"><p>{{category.name}}</p></a>
-                <div class="overlay"></div>
-            </li>
-        </ul>
-    </nav>
-</main>
+        <nav class="boxes">
+            <ul>
+                <li ng-repeat="category in categories">
+                    <img ng-src="{{category.thumbnail}}" alt="{{category.title}}" />
+                    <a href="#/category/{{category.id}}">
+                        <p>{{category.title}}</p>
+                    </a>
+                    <div class="overlay"></div>
+                </li>
+            </ul>
+        </nav>
+    </main>
+</section>

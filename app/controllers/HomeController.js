@@ -7,7 +7,7 @@ R24.HomeController = ['$scope', 'DataSource', '$timeout', '$location', function(
     dataSource.getCategories()
         .then(function(categories) {
             $timeout(function() {
-                $scope.categories = categories
+                $scope.categories = categories;
             });
         }, function(message) {
             dataSource.setActivity(false, message);

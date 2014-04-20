@@ -21,17 +21,14 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
                 error: angular.isUndefined(msg) ? false : msg
             }
         }, active ? 400 : 0); // give reasonable time on load (40ms)
-
     }
 
     /* Fetches all content and saves to cache */
 
     function getContent() {
-
         setActivity(true);
 
         if(angular.isUndefined(_contentCache)) {
-
             return $http.get(API_URI).
                 then(
                     function(result) {
@@ -83,7 +80,6 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
     /* Filter fetched content */
 
     return {
-
         setActivity: setActivity,
 
         getPage: function(pageName) {
