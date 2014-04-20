@@ -1,6 +1,17 @@
 
-header nav ul li a {
-  @include vendor-prefix(transition, 0.3s ease-out all);
+header nav ul li {
+  &.ng-enter {
+    @include vendor-prefix(transition, 1s ease-out all);
+    opacity: 0;
+  }
+
+  &.ng-enter-active {
+    opacity: 1;
+  }
+
+  a {
+    @include vendor-prefix(transition, 0.3s ease-out all);
+  }
 }
 
 nav.boxes ul li div.overlay {

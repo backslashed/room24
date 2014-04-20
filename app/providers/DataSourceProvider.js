@@ -27,6 +27,7 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
     /* Fetches all content and saves to cache */
 
     function getContent() {
+
         setActivity(true);
 
         if(angular.isUndefined(_contentCache)) {

@@ -22,6 +22,8 @@ header {
     top: 0;
     right: 0;
     margin-right: 0; }
+    header figure img {
+      border: 0px; }
   header menu {
     padding: 20px 0;
     margin-bottom: 13px; }
@@ -131,6 +133,15 @@ nav.boxes-items ul {
     nav.boxes-items ul li a {
       position: relative; }
 
+header nav ul li.ng-enter {
+  -webkit-transition: 1s ease-out all;
+  -ms-transition: 1s ease-out all;
+  -moz-transition: 1s ease-out all;
+  -o-transition: 1s ease-out all;
+  transition: 1s ease-out all;
+  opacity: 0; }
+header nav ul li.ng-enter-active {
+  opacity: 1; }
 header nav ul li a {
   -webkit-transition: 0.3s ease-out all;
   -ms-transition: 0.3s ease-out all;
