@@ -5,24 +5,50 @@ body {
   font: $font-regular;
 }
 
+a { color: $text-menu-highlight-color; }
+
+#page {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+
 header {
 
-  menu > menuitem > a {
+  position: relative;
+  height: 95px;
+
+  figure {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0;
+  }
+
+  menu {
+    padding: 20px 0;
+    margin-bottom: 13px;
+
+    menuitem {
+      &:first-child {
+        margin-right: 30px;
+      }
+
+      a {
         font: $font-regular;
-        color: $text-menu-highlight-color;
         text-transform: uppercase;
         text-decoration: none;
+      }
+    }
   }
 
   nav {
 
     ul {
-
       margin: 0;
       padding: 0;
 
       li {
-
         list-style: none;
         float: left;
         margin-right: 30px;
@@ -63,4 +89,13 @@ main {
     color: $text-header-color;
   }
 
+  section.body {
+    margin-top: 60px;
+  }
+
+  section.body-short {
+    @extend section.body;
+    width: 100%;
+    max-width: 800px;
+  }
 }

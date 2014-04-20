@@ -1,8 +1,14 @@
 
-<span ng-bind-html="category.body"></span>
+<section class="body-short" ng-bind-html="category.body"></section>
 
-<nav>
+<nav class="boxes-items">
     <ul>
-        <li ng-repeat="item in items"><a href="#/category/{{category.id}}/{{item.id}}">{{item.title}}</a></li>
+        <li ng-repeat="item in items">
+            <img ng-src="{{item.thumbnail}}" alt="{{item.title}}" />
+            <a href="#/category/{{category.id}}/{{item.id}}">
+                <p>{{item.title}}<br />{{item.description}}<br /><span class="faded">{{item.agency}}</span></p>
+            </a>
+            <div class="overlay"></div>
+        </li>
     </ul>
 </nav>

@@ -1,8 +1,10 @@
 
-$page-background-color: #1a1b24;
+* { box-sizing: border-box; }
 
-$font-regular: 300 14px/21px 'Helvetica Neue';
-$font-bold: 600 14px/21px 'Helvetica Neue';
+$page-background-color: #1e1f2a;
+
+$font-regular: 400 14px/21px 'Helvetica Neue';
+$font-bold: 600 14px/18px 'Helvetica Neue';
 $font-thin: 100 50px/52px 'Helvetica Neue';
 
 $text-header-color: #33ccff;
@@ -11,8 +13,14 @@ $text-menu-color: #256682;
 $text-menu-highlight-color: #fff;
 $text-body-color: #cccccc;
 
-* { box-sizing: border-box; }
-
-a { color: #fff }
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
 
 @import "page";
+@import "boxes";
+@import "animations";

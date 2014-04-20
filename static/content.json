@@ -14,42 +14,43 @@
 
     "categories": [
         {
-            "id": "1",
+            "id": "1qwe2",
             "name": "Custom compositions",
-            "body": "<h1>1We are passionate about making sounds that tell a story</h1>",
-            "image": "url"
+            "body": "<h1>Lorem ipsum dolorem tyranosaurus rex meets Samuel L. Jackson.</h1>",
+            "thumbnail": "assets/thumb_custom_compositions.png"
         },
         {
-            "id": "2",
+            "id": "2asd3",
             "name": "Sound Design",
-            "body": "<h1>2We are passionate about making sounds that tell a story</h1>",
-            "image": ""
+            "body": "<h1>We are passionate about making sounds that tell a story.</h1>",
+            "thumbnail": "assets/thumb_sound_design.png"
         },
         {
             "id": "3",
             "name": "Live Sessions",
             "body": "<h1>3We are passionate about making sounds that tell a story</h1>",
-            "image": ""
+            "thumbnail": "assets/thumb_live_sessions.png"
         },
         {
             "id": "4",
             "name": "Sound Experience",
             "body": "<h1>4We are passionate about making sounds that tell a story</h1>",
-            "image": ""
+            "thumbnail": "assets/thumb_sound_experience.png"
         },
         {
             "id": "5",
             "name": "Music supervision",
             "body": "<h1>We are passionate about making sounds that tell a story</h1>",
-            "image": ""
+            "thumbnail": "assets/thumb_music_supervision.png"
         }
     ],
 
     "items": [
         {
-            "id": "1",
-            "category_id": "1",
+            "id": "11",
+            "category_id": "1qwe2",
             "media_url": "A3bej12",
+            "thumbnail": "assets/thumb_1.png",
             "title": "GE Brand Movie",
             "client": "General Electric",
             "director": "Steve Ghrey",
@@ -58,9 +59,10 @@
             "description": "Internal Brand Video"
         },
         {
-            "id": "2",
-            "category_id": "1",
+            "id": "21",
+            "category_id": "1qwe2",
             "media_url": "A3bej12",
+            "thumbnail": "assets/thumb_2.png",
             "title": "GE Brand Movie 2",
             "client": "General Electric",
             "director": "Steve Ghrey",
@@ -69,9 +71,10 @@
             "description": "Internal Brand Video"
         },
         {
-            "id": "3",
-            "category_id": "1",
+            "id": "34",
+            "category_id": "1qwe2",
             "media_url": "A3bej12",
+            "thumbnail": "assets/thumb_3.png",
             "title": "GE Brand Movie 3",
             "client": "General Electric",
             "director": "Steve Ghrey",
@@ -80,9 +83,10 @@
             "description": "Internal Brand Video"
         },
         {
-            "id": "4",
-            "category_id": "2",
+            "id": "49",
+            "category_id": "2asd3",
             "media_url": "A3bej12",
+            "thumbnail": "assets/thumb_4.png",
             "title": "GE Sound Effect",
             "client": "General Electric",
             "director": "Steve Ghrey",
