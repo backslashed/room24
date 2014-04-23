@@ -3,7 +3,7 @@
     "pages": {
         "home" : {
             "title": "",
-            "body": "<h1>We are an independent music production studio, producing original composition and sound design.</h1>"
+            "body": "We are an independent music production studio, producing original composition and sound design."
         },
 
         "about": {
@@ -16,31 +16,31 @@
         {
             "id": "1qwe2",
             "title": "Custom compositions",
-            "body": "<h1>Lorem ipsum dolorem tyranosaurus rex meets Samuel L. Jackson.</h1>",
+            "body": "Lorem ipsum dolorem tyranosaurus rex meets Samuel L. Jackson.",
             "thumbnail": "assets/thumb_custom_compositions.png"
         },
         {
             "id": "2asd3",
             "title": "Sound Design",
-            "body": "<h1>We are passionate about making sounds that tell a story.</h1>",
+            "body": "We are passionate about making sounds that tell a story.",
             "thumbnail": "assets/thumb_sound_design.png"
         },
         {
             "id": "3",
             "title": "Live Sessions",
-            "body": "<h1>3We are passionate about making sounds that tell a story</h1>",
+            "body": "3We are passionate about making sounds that tell a story",
             "thumbnail": "assets/thumb_live_sessions.png"
         },
         {
             "id": "4",
             "title": "Sound Experience",
-            "body": "<h1>4We are passionate about making sounds that tell a story</h1>",
+            "body": "4We are passionate about making sounds that tell a story",
             "thumbnail": "assets/thumb_sound_experience.png"
         },
         {
             "id": "5",
             "title": "Music supervision",
-            "body": "<h1>We are passionate about making sounds that tell a story</h1>",
+            "body": "We are passionate about making sounds that tell a story",
             "thumbnail": "assets/thumb_music_supervision.png"
         }
     ],
@@ -49,7 +49,7 @@
         {
             "id": "11",
             "category_id": "1qwe2",
-            "media_url": "A3bej12",
+            "media_url": "UXyHf_SpUUI",
             "thumbnail": "assets/thumb_1.png",
             "title": "GE Brand Movie",
             "client": "General Electric",
@@ -61,7 +61,7 @@
         {
             "id": "21",
             "category_id": "1qwe2",
-            "media_url": "A3bej12",
+            "media_url": "UXyHf_SpUUI",
             "thumbnail": "assets/thumb_2.png",
             "title": "GE Brand Movie 2",
             "client": "General Electric",
@@ -73,7 +73,7 @@
         {
             "id": "34",
             "category_id": "1qwe2",
-            "media_url": "A3bej12",
+            "media_url": "Y7IxzpB-UMM",
             "thumbnail": "assets/thumb_3.png",
             "title": "GE Brand Movie 3",
             "client": "General Electric",

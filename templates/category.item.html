@@ -1,3 +1,6 @@
+
+<section class="body"><h1 ng-bind="content.item.title"></h1></section>
+
 <iframe id="item-media" type="text/html" height="385" src="{{content.mediaUri}}" allowfullscreen frameborder="0"></iframe>
 
 <section class="details">
@@ -20,3 +23,17 @@
 <p class="abstract">
     {{content.item.body}}
 </p>
+
+<footer>
+    <nav class="boxes-items">
+        <ul>
+            <li ng-repeat="item in content.siblings">
+                <img ng-src="{{item.thumbnail}}" alt="{{item.title}}" />
+                <a href="#/category/{{category.id}}/{{item.id}}">
+                    <p>{{item.title}}<br />{{item.description}}<br /><span class="faded">{{item.agency}}</span></p>
+                </a>
+                <div class="overlay"></div>
+            </li>
+        </ul>
+    </nav>
+</footer>

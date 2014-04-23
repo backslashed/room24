@@ -10,7 +10,7 @@ body {
 a {
   color: white; }
 
-section.content {
+div.aligner, section.content {
   margin: 0 auto;
   width: 100%;
   max-width: 960px; }

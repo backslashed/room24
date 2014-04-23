@@ -8,10 +8,14 @@ body {
 
 a { color: $text-menu-highlight-color; }
 
-section.content {
+div.aligner {
   margin: 0 auto;
   width: 100%;
   max-width: 960px;
+}
+
+section.content {
+  @extend div.aligner;
 }
 
 section.contact {

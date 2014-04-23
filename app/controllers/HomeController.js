@@ -20,4 +20,8 @@ R24.HomeController = ['$scope', 'DataSource', '$timeout', '$location', function(
         var pathId = $location.path().split('/')[2];
         return angular.isUndefined(pathId) ? false : pathId == cId;
     }
+
+    $scope.$on('$stateChangeStart', function() {
+        $scope.contactVisible = false;
+    });
 }];
