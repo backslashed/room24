@@ -24,7 +24,7 @@ app.
             }).
             state('page.category', {
                 url: 'category/:category_id',
-                templateUrl: 'templates/category.html',
+                /*templateUrl: 'templates/category.html',*/
                 controller: 'CategoryController'
             }).
             state('page.item', {

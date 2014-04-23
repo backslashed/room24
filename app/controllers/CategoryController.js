@@ -7,7 +7,8 @@ R24.CategoryController = ['$scope', '$stateParams', 'DataSource', function($scop
 
     dataSource.getCategory(cId).
         then(function(response) {
-            $scope.content.categoryDetails = response.category;
-            $scope.content.categoryItems = response.items;
+            $scope.content.page = response.category;
+            $scope.content.items = response.items;
+            $scope.content.boxClass = 'boxes-items';
         });
 }];

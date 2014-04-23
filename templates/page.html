@@ -7,13 +7,13 @@
 <section class="content">
     <header>
         <menu>
-            <menuitem ng-show="!!content.categories"><a href="#/about">About us</a></menuitem>
-            <menuitem ng-show="!!content.categories"><a ng-click="contactVisible = !contactVisible">Contact</a></menuitem>
+            <menuitem ng-show="!!content.items"><a href="#/about">About us</a></menuitem>
+            <menuitem ng-show="!!content.items"><a ng-click="contactVisible = !contactVisible">Contact</a></menuitem>
         </menu>
 
         <nav>
             <ul>
-                <li ng-repeat="category in content.categories" ng-animate="">
+                <li ng-repeat="category in content.items" ng-animate="">
                     <a ng-class="{ active: isActive('{{category.id}}') }" href="#/category/{{category.id}}">
                         {{category.title}}
                     </a>
@@ -31,12 +31,17 @@
     <main id="sub-view" ui-view>
         <section class="body"><h1 ng-bind="content.page.body"></h1></section>
 
-        <nav class="boxes">
+        <nav ng-class="content.boxClass">
             <ul>
-                <li ng-repeat="category in content.categories">
+                <li ng-repeat="category in content.items">
                     <img ng-src="{{category.thumbnail}}" alt="{{category.title}}" />
-                    <a href="#/category/{{category.id}}">
+
+                    <a ng-hide="!!category.category_id" href="#/category/{{category.id}}">
                         <p>{{category.title}}</p>
+                    </a>
+
+                    <a ng-hide="!category.category_id" href="#/category/{{category.category_id}}/{{category.id}}">
+                        <p>{{category.title}}<br />{{category.description}}<br /><span class="faded">{{category.agency}}</span></p>
                     </a>
                     <div class="overlay"></div>
                 </li>
