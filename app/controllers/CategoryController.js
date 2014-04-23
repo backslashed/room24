@@ -3,9 +3,11 @@ R24.CategoryController = ['$scope', '$stateParams', 'DataSource', function($scop
 
     var cId = $stateParams['category_id'];
 
+    $scope.content = {};
+
     dataSource.getCategory(cId).
         then(function(response) {
-            $scope.category = response.category;
-            $scope.items = response.items;
+            $scope.content.categoryDetails = response.category;
+            $scope.content.categoryItems = response.items;
         });
 }];

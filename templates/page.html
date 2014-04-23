@@ -5,13 +5,13 @@
 <section class="content">
     <header>
         <menu>
-            <menuitem ng-show="!!categories"><a href="#/about">About us</a></menuitem>
-            <menuitem ng-show="!!categories"><a ng-click="contactVisible = !contactVisible">Contact</a></menuitem>
+            <menuitem ng-show="!!content.categories"><a href="#/about">About us</a></menuitem>
+            <menuitem ng-show="!!content.categories"><a ng-click="contactVisible = !contactVisible">Contact</a></menuitem>
         </menu>
 
         <nav>
             <ul>
-                <li ng-repeat="category in categories" ng-animate="">
+                <li ng-repeat="category in content.categories" ng-animate="">
                     <a ng-class="{ active: isActive('{{category.id}}') }" href="#/category/{{category.id}}">
                         {{category.title}}
                     </a>
@@ -27,11 +27,11 @@
     </header>
 
     <main id="sub-view" ui-view>
-        <section class="body" ng-bind-html="content.body"></section>
+        <section class="body" ng-bind-html="content.page.body"></section>
 
         <nav class="boxes">
             <ul>
-                <li ng-repeat="category in categories">
+                <li ng-repeat="category in content.categories">
                     <img ng-src="{{category.thumbnail}}" alt="{{category.title}}" />
                     <a href="#/category/{{category.id}}">
                         <p>{{category.title}}</p>

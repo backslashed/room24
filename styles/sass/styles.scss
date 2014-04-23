@@ -12,6 +12,7 @@ $text-highlight-color: #33cccc;
 $text-menu-color: #256682;
 $text-menu-highlight-color: #fff;
 $text-body-color: #cccccc;
+$blue-dark: #15161d;
 
 @mixin vendor-prefix($name, $argument) {
   -webkit-#{$name}: #{$argument};

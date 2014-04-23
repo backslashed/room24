@@ -1,2 +1,22 @@
+<iframe id="item-media" type="text/html" height="385" src="{{content.mediaUri}}" allowfullscreen frameborder="0"></iframe>
 
-{{item.body}}
+<section class="details">
+    <span class="label">Client</span>
+    {{content.item.client}}
+
+    <span class="label">Director</span>
+    {{content.item.director}}
+
+    <span class="label">Agency</span>
+    {{content.item.agency}}
+
+    <span class="label spaced">Share</span>
+    <a class="twitter-link" href="#"></a>
+    <a class="facebook-link" href="#"></a>
+    <a class="youtube-link" href="#"></a>
+    <a class="google-link" href="#"></a>
+</section>
+
+<p class="abstract">
+    {{content.item.body}}
+</p>
