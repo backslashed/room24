@@ -24,7 +24,6 @@ app.
             }).
             state('page.category', {
                 url: 'category/:category_id',
-                /*templateUrl: 'templates/category.html',*/
                 controller: 'CategoryController'
             }).
             state('page.item', {
@@ -45,3 +44,4 @@ app.
     controller('AboutController', R24.AboutController).
     controller('CategoryController', R24.CategoryController).
     controller('CategoryItemController', R24.CategoryItemController);
+

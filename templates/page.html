@@ -36,13 +36,14 @@
                 <li ng-repeat="category in content.items">
                     <img ng-src="{{category.thumbnail}}" alt="{{category.title}}" />
 
-                    <a ng-hide="!!category.category_id" href="#/category/{{category.id}}">
+                    <a ng-if="!category.category_id" href="#/category/{{category.id}}">
                         <p>{{category.title}}</p>
                     </a>
 
-                    <a ng-hide="!category.category_id" href="#/category/{{category.category_id}}/{{category.id}}">
+                    <a ng-if="!!category.category_id" href="#/category/{{category.category_id}}/{{category.id}}">
                         <p>{{category.title}}<br />{{category.description}}<br /><span class="faded">{{category.agency}}</span></p>
                     </a>
+
                     <div class="overlay"></div>
                 </li>
             </ul>

@@ -1,10 +1,10 @@
 
 #sub-view {
-  @include vendor-prefix(transition, 0.3s linear opacity);
+//  @include vendor-prefix(transition, 0.3s linear opacity);
   position: absolute;
   width: 960px;
 }
-
+/*
 #sub-view {
   &.ng-enter {
     @include vendor-prefix(transition-delay, 0.1s);
@@ -24,6 +24,11 @@
   &.ng-leave.ng-leave-active {
     opacity: 0;
   }
+}
+*/
+
+section.body h1 {
+  @include vendor-prefix(transition, 0.5s linear all);
 }
 
 section.contact {
