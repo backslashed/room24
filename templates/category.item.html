@@ -29,7 +29,7 @@
         <ul>
             <li ng-repeat="item in content.siblings">
                 <img ng-src="{{item.thumbnail}}" alt="{{item.title}}" />
-                <a href="#/category/{{category.id}}/{{item.id}}">
+                <a href="#/category/{{item.category_id}}/{{item.id}}">
                     <p>{{item.title}}<br />{{item.description}}<br /><span class="faded">{{item.agency}}</span></p>
                 </a>
                 <div class="overlay"></div>
