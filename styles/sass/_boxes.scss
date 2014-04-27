@@ -104,3 +104,10 @@ nav.boxes-items {
     }
   }
 }
+
+footer nav.boxes-items {
+  ul li {
+    opacity: 1;
+    @include vendor-prefix(transform, none);
+  }
+}

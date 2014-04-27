@@ -144,6 +144,14 @@ nav.boxes-items ul {
     nav.boxes-items ul li a {
       position: relative; }
 
+footer nav.boxes-items ul li {
+  opacity: 1;
+  -webkit-transform: none;
+  -ms-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  transform: none; }
+
 #item-media {
   width: 67.5%;
   max-width: 625px;
