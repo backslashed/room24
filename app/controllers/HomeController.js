@@ -1,20 +1,9 @@
 
 R24.HomeController = ['$scope', 'DataSource', '$timeout', '$location', function($scope, dataSource, $timeout, $location) {
 
-    $scope.content = {};
-
-    dataSource.getPage('home').then(function(data) {
-        $scope.content.page = data;
-    });
-
-    dataSource.getCategories()
-        .then(function(categories) {
-            $timeout(function() {
-                $scope.content.items = categories;
-                $scope.content.boxClass = 'boxes';
-            });
-        }, function(message) {
-            dataSource.setActivity(false, message);
+    dataSource.getSlides().
+        then(function(data) {
+            console.log(data);
         });
 
     $scope.isActive = function(cId) {

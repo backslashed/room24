@@ -77,6 +77,22 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
         return defer.promise;
     }
 
+    var transformContent = function(result) {
+        var slides = [{
+            "body": result.data.pages["home"].body,
+            "items": result.data.categories
+        }];
+
+        angular.forEach(result.data.categories, function(val) {
+            slides.push({
+                "body": val.body,
+                "items": _(result.data.items).where({ category_id: val.id })
+            });
+        });
+
+        return slides;
+    }
+
     /* Filter fetched content */
 
     return {
@@ -113,6 +129,10 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
                 return angular.isUndefined(response) ?
                     angular.noop : _(response.data.items).findWhere({ id: itemId });
             });
+        },
+
+        getSlides: function() {
+            return getContent().then(transformContent);
         }
     }
 }];

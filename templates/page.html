@@ -13,7 +13,7 @@
 
         <nav>
             <ul>
-                <li ng-repeat="category in content.items" ng-animate="">
+                <li ng-repeat="category in content.items">
                     <a ng-class="{ active: isActive('{{category.id}}') }" href="#/category/{{category.id}}">
                         {{category.title}}
                     </a>
