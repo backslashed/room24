@@ -11,8 +11,7 @@ R24.HomeController = ['$scope', 'DataSource', '$timeout', '$location', function(
         });
 
     $scope.isActive = function(cId) {
-        var pathId = $location.path().split('/')[2];
-        return angular.isUndefined(pathId) ? false : pathId == cId;
+        return cId == $scope.content.activeSlide - 1;
     }
 
     $scope.$on('$stateChangeStart', function() {
