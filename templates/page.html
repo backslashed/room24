@@ -13,15 +13,15 @@
 
         <nav>
             <ul>
-                <li ng-repeat="category in content.items">
-                    <a ng-class="{ active: isActive('{{category.id}}') }" href="#/category/{{category.id}}">
+                <li ng-repeat="category in content.categories">
+                    <a ng-class="{ active: isActive('{{category.id}}') }" ng-click="content.activeSlide = $index + 1">
                         {{category.title}}
                     </a>
                 </li>
             </ul>
         </nav>
 
-        <figure><a href="#/"><img src="assets/logo.png" alt="Room24 logo"/></a></figure>
+        <figure><a href="#" ng-click="content.activeSlide = 0"><img src="assets/logo.png" alt="Room24 logo"/></a></figure>
 
         <strong ng-show="network.error">{{network.error}}</strong>
         <strong ng-show="network.active">Loading...</strong>
@@ -29,24 +29,26 @@
     </header>
 
     <main id="sub-view" ui-view>
-        <section class="body"><h1 ng-bind="content.page.body"></h1></section>
-
+        <section class="body"><h1 ng-bind="content.slides[content.activeSlide].body"></h1></section>
+        <nav-box ng-model="content.slides[content.activeSlide]"></nav-box>
+<!--
         <nav ng-class="content.boxClass">
             <ul>
                 <li ng-repeat="category in content.items">
-                    <img ng-src="{{category.thumbnail}}" alt="{{category.title}}" />
+                    <img ng-src="{{thumbnail}}" alt="{{title}}" />
 
-                    <a ng-if="!category.category_id" href="#/category/{{category.id}}">
-                        <p>{{category.title}}</p>
+                    <a ng-if="!category_id" href="#/category/{{id}}">
+                        <p>{{title}}</p>
                     </a>
 
-                    <a ng-if="!!category.category_id" href="#/category/{{category.category_id}}/{{category.id}}">
-                        <p>{{category.title}}<br />{{category.description}}<br /><span class="faded">{{category.agency}}</span></p>
+                    <a ng-if="!!category_id" href="#/category/{{category_id}}/{{id}}">
+                        <p>{{title}}<br />{{description}}<br /><span class="faded">{{agency}}</span></p>
                     </a>
 
                     <div class="overlay"></div>
                 </li>
             </ul>
         </nav>
+-->
     </main>
 </section>

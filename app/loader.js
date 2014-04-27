@@ -5,7 +5,8 @@ require.config({
     baseUrl: 'app',
 
     paths: {
-        'libs': '../libs'
+        'libs': '../libs',
+        'TweenMax': '//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min'
     }
 });
 
@@ -17,13 +18,16 @@ require(['libs/angular.min'], function() {
        'libs/angular-sanitize.min',
        'libs/angular-touch.min',
        'libs/angular-ui-router.min',
-       'libs/underscore-min'], function() {
+       'libs/underscore-min',
+       'TweenMax'], function() {
 
        require([
            'controllers/HomeController',
            'controllers/AboutController',
            'controllers/CategoryController',
            'controllers/CategoryItemController',
+
+           'directives/NavBox',
 
            'providers/DataSourceProvider'], function() {
 

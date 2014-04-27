@@ -201,28 +201,6 @@ footer {
   position: absolute;
   width: 960px; }
 
-/*
-#sub-view {
-  &.ng-enter {
-    @include vendor-prefix(transition-delay, 0.1s);
-    opacity: 0;
-  }
-
-  &.ng-enter.ng-enter-active {
-    opacity: 1;
-  }
-
-
-  &.ng-leave {
-    @include vendor-prefix(transition, 0.1s linear opacity);
-    opacity: 1;
-  }
-
-  &.ng-leave.ng-leave-active {
-    opacity: 0;
-  }
-}
-*/
 section.body h1, main section.body-short h1 {
   -webkit-transition: 0.5s linear all;
   -ms-transition: 0.5s linear all;
@@ -257,6 +235,14 @@ header nav ul li a {
   -moz-transition: 0.3s ease-out all;
   -o-transition: 0.3s ease-out all;
   transition: 0.3s ease-out all; }
+
+nav.boxes ul li, nav.boxes-items ul li {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0; }
 
 nav.boxes ul li div.overlay, nav.boxes-items ul li div.overlay {
   -webkit-transition: 0.28s ease-in opacity;

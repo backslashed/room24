@@ -43,5 +43,7 @@ app.
     controller('HomeController', R24.HomeController).
     controller('AboutController', R24.AboutController).
     controller('CategoryController', R24.CategoryController).
-    controller('CategoryItemController', R24.CategoryItemController);
+    controller('CategoryItemController', R24.CategoryItemController).
+
+    directive('navBox', R24.NavBox);
 

@@ -80,13 +80,15 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
     var transformContent = function(result) {
         var slides = [{
             "body": result.data.pages["home"].body,
-            "items": result.data.categories
+            "items": result.data.categories,
+            "boxClass": "boxes"
         }];
 
         angular.forEach(result.data.categories, function(val) {
             slides.push({
                 "body": val.body,
-                "items": _(result.data.items).where({ category_id: val.id })
+                "items": _(result.data.items).where({ category_id: val.id }),
+                "boxClass": "boxes-items"
             });
         });
 

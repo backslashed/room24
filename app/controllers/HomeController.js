@@ -3,7 +3,11 @@ R24.HomeController = ['$scope', 'DataSource', '$timeout', '$location', function(
 
     dataSource.getSlides().
         then(function(data) {
-            console.log(data);
+            $scope.content = {
+                activeSlide: 0,
+                slides: data,
+                categories: data[0].items
+            }
         });
 
     $scope.isActive = function(cId) {
