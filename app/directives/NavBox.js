@@ -1,5 +1,5 @@
 
-R24.NavBox = ['$interpolate', function($interpolate) {
+R24.NavBox = ['$interpolate', '$animate', function($interpolate, $animate) {
 
     var linkFn = function(scope, elem, attr) {
         var container    = angular.element(elem.children()[1]),
@@ -12,7 +12,6 @@ R24.NavBox = ['$interpolate', function($interpolate) {
                 animationElements = [];
 
             container.html('');
-            header.html(newItems.body);
 
             elem.removeClass('boxes boxes-items').addClass(newItems.boxClass);
 
@@ -36,10 +35,16 @@ R24.NavBox = ['$interpolate', function($interpolate) {
         scope.$watch('ngModel', function(newVal, oldVal) {
             if(angular.isDefined(newVal)) {
                 if(angular.isDefined(oldVal) && oldVal !== newVal && oldVal.items.length > 0) {
+                    $animate.addClass(header, 'getOut', function() {
+                        header.html(newVal.body);
+                        $animate.removeClass(header, 'getOut');
+                    });
+
                     TweenMax.staggerTo(container.children(), 0.5, { opacity: 0, scale: 0.8 }, 0.07, function() {
                         pushNewItems(newVal);
                     });
                 } else {
+                    header.html(newVal.body);
                     pushNewItems(newVal);
                 }
             }

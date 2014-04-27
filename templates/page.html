@@ -30,24 +30,5 @@
 
     <main id="sub-view" ui-view>
         <nav-box ng-model="content.slides[content.activeSlide]" active-slide="content.activeSlide"></nav-box>
-<!--
-        <nav ng-class="content.boxClass">
-            <ul>
-                <li ng-repeat="category in content.items">
-                    <img ng-src="{{thumbnail}}" alt="{{title}}" />
-
-                    <a ng-if="!category_id" href="#/category/{{id}}">
-                        <p>{{title}}</p>
-                    </a>
-
-                    <a ng-if="!!category_id" href="#/category/{{category_id}}/{{id}}">
-                        <p>{{title}}<br />{{description}}<br /><span class="faded">{{agency}}</span></p>
-                    </a>
-
-                    <div class="overlay"></div>
-                </li>
-            </ul>
-        </nav>
--->
     </main>
 </section>
