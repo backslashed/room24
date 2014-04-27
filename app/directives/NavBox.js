@@ -8,8 +8,7 @@ R24.NavBox = ['$interpolate', '$animate', function($interpolate, $animate) {
             boxTemplate  = '<li><img src="{{thumbnail}}" alt="{{title}}" /><a href="#"><p>{{title}}</p></a><div class="overlay"></div></li>';
 
         var pushNewItems = function(newItems) {
-            var template = $interpolate(newItems.boxClass == 'boxes' ? boxTemplate : itemTemplate),
-                animationElements = [];
+            var template = $interpolate(newItems.boxClass == 'boxes' ? boxTemplate : itemTemplate);
 
             container.html('');
 
@@ -25,7 +24,6 @@ R24.NavBox = ['$interpolate', '$animate', function($interpolate, $animate) {
                     });
                 }
 
-                animationElements.push(el);
                 container.append(el);
             });
 

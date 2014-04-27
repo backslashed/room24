@@ -59,11 +59,14 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
         _cachingPhase = true;
 
         try {
-            angular.forEach(result.data.categories, function(category) {
-                var img = new Image();
-                img.src = category.thumbnail;
-                _imageCache.push(img);
-            });
+            for(var i = 0; i < result.length; i++) {
+                angular.forEach(result[i].items, function(item) {
+                    var img = new Image();
+                    img.src = item.thumbnail;
+                    _imageCache.push(img);
+                });
+            }
+
             setActivity(false);
             _cachingPhase = false;
             defer.resolve(result);
@@ -107,15 +110,6 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
             })
         },
 
-        getCategories: function() {
-            return getContent().
-                then(preloadThumbnails).
-                then(function(response) {
-                    return angular.isUndefined(response) ?
-                        angular.noop : response.data.categories;
-            });
-        },
-
         getCategory: function(categoryId) {
             return getContent().then(function(response) {
                 return angular.isUndefined(response) ?
@@ -134,7 +128,9 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
         },
 
         getSlides: function() {
-            return getContent().then(transformContent);
+            return getContent().
+                then(transformContent).
+                then(preloadThumbnails);
         }
     }
 }];

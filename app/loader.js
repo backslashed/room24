@@ -22,9 +22,8 @@ require(['libs/angular.min'], function() {
        'TweenMax'], function() {
 
        require([
-           'controllers/HomeController',
-           'controllers/AboutController',
            'controllers/CategoryController',
+           'controllers/AboutController',
            'controllers/CategoryItemController',
 
            'directives/NavBox',

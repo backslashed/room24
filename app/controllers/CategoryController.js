@@ -1,15 +1,20 @@
 
-R24.CategoryController = ['$scope', '$stateParams', 'DataSource', '$timeout', function($scope, $stateParams, dataSource, $timeout) {
+R24.CategoryController = ['$scope', 'DataSource', '$timeout', '$location', function($scope, dataSource, $timeout, $location) {
 
-    var cId = $stateParams['category_id'];
-
-    $scope.content = {};
-
-    dataSource.getCategory(cId).
-        then(function(response) {
-            $scope.content.page = response.category;
-            $scope.content.items = {};
-            $timeout(function() { $scope.content.items = response.items; }, 50);
-            $scope.content.boxClass = 'boxes-items';
+    dataSource.getSlides().
+        then(function(data) {
+            $scope.content = {
+                activeSlide: 0,
+                slides: data,
+                categories: data[0].items
+            }
         });
+
+    $scope.isActive = function(cId) {
+        return cId == $scope.content.activeSlide - 1;
+    }
+
+    $scope.$on('$stateChangeStart', function() {
+        $scope.contactVisible = false;
+    });
 }];

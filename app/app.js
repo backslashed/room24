@@ -20,10 +20,6 @@ app.
             state('page', {
                 url: '/',
                 templateUrl: 'templates/page.html',
-                controller: 'HomeController'
-            }).
-            state('page.category', {
-                url: 'category/:category_id',
                 controller: 'CategoryController'
             }).
             state('page.item', {
@@ -40,9 +36,8 @@ app.
 
     factory('DataSource', R24.DataSourceProvider).
 
-    controller('HomeController', R24.HomeController).
-    controller('AboutController', R24.AboutController).
     controller('CategoryController', R24.CategoryController).
+    controller('AboutController', R24.AboutController).
     controller('CategoryItemController', R24.CategoryItemController).
 
     directive('navBox', R24.NavBox);
