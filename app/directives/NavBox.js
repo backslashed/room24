@@ -5,7 +5,7 @@ R24.NavBox = ['$interpolate', '$animate', function($interpolate, $animate) {
         var container    = angular.element(elem.children()[1]),
             header       = angular.element(elem.children()[0]).children(),
             itemTemplate = '<li><img src="{{thumbnail}}" alt="{{title}}" /><a href="#/category/{{category_id}}/{{id}}"><p>{{title}}<br />{{description}}<br /><span class="faded">{{agency}}</span></p></a><div class="overlay"></div></li>',
-            boxTemplate  = '<li><img src="{{thumbnail}}" alt="{{title}}" /><a href="#"><p>{{title}}</p></a><div class="overlay"></div></li>';
+            boxTemplate  = '<li><img src="{{thumbnail}}" alt="{{title}}" /><a><p>{{title}}</p></a><div class="overlay"></div></li>';
 
         var pushNewItems = function(newItems) {
             var template = $interpolate(newItems.boxClass == 'boxes' ? boxTemplate : itemTemplate);

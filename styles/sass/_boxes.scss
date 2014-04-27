@@ -17,6 +17,7 @@ nav.boxes {
       height: $box-size-h;
       display: block;
       opacity: auto;
+      cursor: pointer;
 
       &:hover div.overlay {
         opacity: 0;

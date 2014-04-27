@@ -74,6 +74,7 @@ header {
           text-decoration: none;
           text-transform: uppercase;
           border-bottom: 1px solid transparent;
+          cursor: pointer;
 
           &:hover, &.active {
             color: $text-menu-highlight-color;

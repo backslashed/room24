@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li ng-repeat="category in content.categories">
-                    <a ng-class="{ active: isActive($index) }" href="#" ng-click="content.activeSlide = $index + 1">
+                    <a ng-class="{ active: isActive($index) }" ng-click="content.activeSlide = $index + 1">
                         {{category.title}}
                     </a>
                 </li>

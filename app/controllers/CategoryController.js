@@ -1,10 +1,12 @@
 
-R24.CategoryController = ['$scope', 'DataSource', '$timeout', '$location', function($scope, dataSource, $timeout, $location) {
+R24.CategoryController = ['$scope', 'DataSource', '$location', function($scope, dataSource, $location) {
+
+    var preselectedSlide = angular.isDefined($location.search().slide) ? $location.search().slide : 0;
 
     dataSource.getSlides().
         then(function(data) {
             $scope.content = {
-                activeSlide: 0,
+                activeSlide: preselectedSlide,
                 slides: data,
                 categories: data[0].items
             }
@@ -14,7 +16,17 @@ R24.CategoryController = ['$scope', 'DataSource', '$timeout', '$location', funct
         return cId == $scope.content.activeSlide - 1;
     }
 
-    $scope.$on('$stateChangeStart', function() {
+    $scope.$watch('content.activeSlide', function(slideNumber) {
+        if(angular.isNumber(slideNumber)) {
+            $location.search('slide', slideNumber);
+        }
+    });
+
+    $scope.$on('$locationChangeStart', function() {
         $scope.contactVisible = false;
+
+        if(angular.isDefined($location.search().slide)) {
+            $scope.content.activeSlide = $location.search().slide;
+        }
     });
 }];

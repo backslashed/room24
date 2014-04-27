@@ -55,7 +55,8 @@ header {
         display: block;
         text-decoration: none;
         text-transform: uppercase;
-        border-bottom: 1px solid transparent; }
+        border-bottom: 1px solid transparent;
+        cursor: pointer; }
         header nav ul li a:hover, header nav ul li a.active {
           color: white;
           border-color: white; }
@@ -87,7 +88,8 @@ nav.boxes, nav.boxes-items {
       width: 320px;
       height: 175px;
       display: block;
-      opacity: auto; }
+      opacity: auto;
+      cursor: pointer; }
       nav.boxes ul li:hover div.overlay, nav.boxes-items ul li:hover div.overlay {
         opacity: 0; }
       nav.boxes ul li img, nav.boxes-items ul li img {
