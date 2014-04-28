@@ -1,13 +1,11 @@
 
 #sub-view {
-  position: absolute;
-  width: 960px;
   @include vendor-prefix(transition, 0.5s linear opacity);
-}
 
-#sub-view {
   &.ng-enter {
     @include vendor-prefix(transition-delay, 0.1s);
+    position: absolute;
+    width: 960px;
     opacity: 0;
   }
 
@@ -18,6 +16,8 @@
 
   &.ng-leave {
     @include vendor-prefix(transition, 0.1s linear opacity);
+    position: absolute;
+    width: 960px;
     opacity: 1;
   }
 
@@ -26,18 +26,14 @@
   }
 }
 
-section.body h1 {
-  @include vendor-prefix(transition, 0.5s linear all);
-}
-
 section.contact {
   @include vendor-prefix(transition, 0.3s ease-out height);
   height: 0px;
   overflow: hidden;
-}
 
-section.contact.active {
-  height: 60px;
+  &.active {
+    height: 60px;
+  }
 }
 
 header nav ul li {
@@ -55,51 +51,51 @@ header nav ul li {
   }
 }
 
-nav.boxes section.body h1 {
-  @include vendor-prefix(transform, translate3d(0, 0, 0));
-  opacity: 1;
-}
+nav.boxes {
+  section.body h1 {
+    @include vendor-prefix(transform, translate3d(0, 0, 0));
+    @include vendor-prefix(transition, 0.5s linear all);
+    opacity: 1;
 
-nav.boxes section.body h1.getOut.getOut-add {
-  @include vendor-prefix(transition, 0.5s ease-out all);
-  @include vendor-prefix(transform, translate3d(0, 0, 0));
-  opacity: 1;
-}
+    &.getOut.getOut-add {
+      @include vendor-prefix(transform, translate3d(0, 0, 0));
+      opacity: 1;
+    }
 
-nav.boxes section.body h1.getOut.getOut-add.getOut-add-active {
-  @include vendor-prefix(transform, translate3d(50px, 0, 0));
-  opacity: 0;
-}
+    &.getOut.getOut-add.getOut-add-active {
+      @include vendor-prefix(transform, translate3d(35px, 0, 0));
+      opacity: 0;
+    }
 
-nav.boxes section.body h1.getOut.getOut-remove {
-  @include vendor-prefix(transform, translate3d(-50px, 0, 0));
-  opacity: 0;
-}
+    &.getOut.getOut-remove {
+      @include vendor-prefix(transform, translate3d(-35px, 0, 0));
+      opacity: 0;
+    }
+  }
 
-nav.boxes ul li{
-  @include vendor-prefix(transform, scale(0.8));
-  opacity: 0;
-}
-
-nav.boxes ul li div.overlay {
-  @include vendor-prefix(transition, 0.28s ease-in opacity);
-}
-
-nav.boxes ul li {
-  &.ng-enter {
-    @include vendor-prefix(transition, 0.3s ease-in all);
+  ul li {
     @include vendor-prefix(transform, scale(0.8));
-    opacity:0;
-  }
+    opacity: 0;
 
-  &.ng-enter-stagger {
-    @include vendor-prefix(transition-delay, 0.09s);
-    @include vendor-prefix(transition-duration, 0s);
-  }
+    div.overlay {
+      @include vendor-prefix(transition, 0.28s ease-in opacity);
+    }
 
-  &.ng-enter.ng-enter-active {
-    opacity:1;
-    @include vendor-prefix(transform, scale(1));
+    &.ng-enter {
+      @include vendor-prefix(transition, 0.3s ease-in all);
+      @include vendor-prefix(transform, scale(0.8));
+      opacity: 0;
+    }
+
+    &.ng-enter-stagger {
+      @include vendor-prefix(transition-delay, 0.09s);
+      @include vendor-prefix(transition-duration, 0s);
+    }
+
+    &.ng-enter.ng-enter-active {
+      opacity: 1;
+      @include vendor-prefix(transform, scale(1));
+    }
   }
 }
 

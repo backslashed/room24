@@ -35,12 +35,11 @@ R24.NavBox = ['$interpolate', '$animate', function($interpolate, $animate) {
                 if(angular.isDefined(oldVal) && oldVal !== newVal && oldVal.items.length > 0) {
                     $animate.addClass(header, 'getOut', function() {
                         header.html(newVal.body);
+                        pushNewItems(newVal);
                         $animate.removeClass(header, 'getOut');
                     });
 
-                    TweenMax.staggerTo(container.children(), 0.3, { opacity: 0, scale: 0.95 }, 0.1, function() {
-                        pushNewItems(newVal);
-                    });
+                    TweenMax.staggerTo(container.children(), 0.3, { opacity: 0, scale: 0.95 }, 0.5 / container.children().length);
                 } else {
                     header.html(newVal.body);
                     pushNewItems(newVal);
