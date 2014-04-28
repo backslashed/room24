@@ -55,14 +55,24 @@ header nav ul li {
   }
 }
 
+nav.boxes section.body h1 {
+  @include vendor-prefix(transform, translate3d(0, 0, 0));
+  opacity: 1;
+}
+
 nav.boxes section.body h1.getOut.getOut-add {
-  @include vendor-prefix(transition, 0.5s ease-out all);
+  @include vendor-prefix(transition, 0.6s ease-out all);
   @include vendor-prefix(transform, translate3d(0, 0, 0));
   opacity: 1;
 }
 
 nav.boxes section.body h1.getOut.getOut-add.getOut-add-active {
-  @include vendor-prefix(transform, translate3d(0px, 0, 0));
+  @include vendor-prefix(transform, translate3d(50px, 0, 0));
+  opacity: 0;
+}
+
+nav.boxes section.body h1.getOut.getOut-remove {
+  @include vendor-prefix(transform, translate3d(-50px, 0, 0));
   opacity: 0;
 }
 
