@@ -1,28 +1,13 @@
 
 #sub-view {
-  @include vendor-prefix(transition, 0.5s linear opacity);
 
   &.ng-enter {
-    @include vendor-prefix(transition-delay, 0.1s);
-    position: absolute;
-    width: 960px;
+    @include vendor-prefix(transition, 0.5s linear opacity);
     opacity: 0;
   }
 
   &.ng-enter.ng-enter-active {
     opacity: 1;
-  }
-
-
-  &.ng-leave {
-    @include vendor-prefix(transition, 0.1s linear opacity);
-    position: absolute;
-    width: 960px;
-    opacity: 1;
-  }
-
-  &.ng-leave.ng-leave-active {
-    opacity: 0;
   }
 }
 

@@ -56,5 +56,16 @@ p.abstract {
 
 footer {
   background-color: $blue-dark;
-  padding-top: 40px;
+  padding: 10px 0 40px;
+}
+
+footer nav.boxes-items {
+  ul {
+    overflow: hidden;
+
+    li {
+      opacity: 1;
+      @include vendor-prefix(transform, none);
+    }
+  }
 }

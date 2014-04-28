@@ -1,5 +1,5 @@
 
-R24.NavBox = ['$interpolate', '$animate', function($interpolate, $animate) {
+R24.NavBox = ['$interpolate', '$animate', '$location', function($interpolate, $animate, $location) {
 
     var linkFn = function(scope, elem, attr) {
         var container    = angular.element(elem.children()[1]),
@@ -21,6 +21,17 @@ R24.NavBox = ['$interpolate', '$animate', function($interpolate, $animate) {
                     el.bind('click', function() {
                         scope.activeSlide = key + 1;
                         scope.$apply();
+                    });
+                } else {
+                    el.bind('click', function(event) {
+                        $animate.addClass(header, 'getOut', function() {
+                            $location.path('/category/' + item.category_id + '/' + item.id);
+                            scope.$apply();
+                        });
+
+                        TweenMax.staggerTo(container.children(), 0.3, { opacity: 0, scale: 0.95 }, 0.5 / container.children().length);
+
+                        event.preventDefault();
                     });
                 }
 

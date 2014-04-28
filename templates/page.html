@@ -5,30 +5,33 @@
 </section>
 
 <section class="content">
-    <header>
-        <menu>
-            <menuitem ng-show="!!content.categories"><a href="#/about">About us</a></menuitem>
-            <menuitem ng-show="!!content.categories"><a ng-click="contactVisible = !contactVisible">Contact</a></menuitem>
-        </menu>
+    <div class="aligner">
+        <header>
+            <menu>
+                <menuitem ng-show="!!content.categories"><a href="#/about">About us</a></menuitem>
+                <menuitem ng-show="!!content.categories"><a ng-click="contactVisible = !contactVisible">Contact</a></menuitem>
+            </menu>
 
-        <nav>
-            <ul>
-                <li ng-repeat="category in content.categories">
-                    <a ng-class="{ active: isActive($index) }" ng-href="#/?slide={{$index + 1}}">
-                        {{category.title}}
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li ng-repeat="category in content.categories">
+                        <a ng-class="{ active: isActive($index) }" ng-href="#/?slide={{$index + 1}}">
+                            {{category.title}}
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
-        <figure><a href="#" ng-click="content.activeSlide = 0"><img src="assets/logo.png" alt="Room24 logo"/></a></figure>
+            <figure><a href="#/" ng-click="content.activeSlide = 0"><img src="assets/logo.png" alt="Room24 logo"/></a></figure>
 
-        <strong ng-show="network.error">{{network.error}}</strong>
-        <strong ng-show="network.active">Loading...</strong>
+            <strong ng-show="network.error">{{network.error}}</strong>
+            <strong ng-show="network.active">Loading...</strong>
 
-    </header>
-
+        </header>
+    </div>
     <main id="sub-view" ui-view>
-        <nav-box ng-model="content.slides[content.activeSlide]" active-slide="content.activeSlide"></nav-box>
+        <div class="aligner">
+            <nav-box ng-model="content.slides[content.activeSlide]" active-slide="content.activeSlide"></nav-box>
+        </div>
     </main>
 </section>

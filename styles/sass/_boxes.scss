@@ -18,6 +18,7 @@ nav.boxes {
       display: block;
       opacity: auto;
       cursor: pointer;
+      overflow: hidden;
 
       &:hover div.overlay {
         opacity: 0;
@@ -102,12 +103,5 @@ nav.boxes-items {
 
       }
     }
-  }
-}
-
-footer nav.boxes-items {
-  ul li {
-    opacity: 1;
-    @include vendor-prefix(transform, none);
   }
 }

@@ -10,7 +10,7 @@ body {
 a {
   color: white; }
 
-div.aligner, section.content {
+div.aligner {
   margin: 0 auto;
   width: 100%;
   max-width: 960px; }
@@ -89,7 +89,8 @@ nav.boxes, nav.boxes-items {
       height: 175px;
       display: block;
       opacity: auto;
-      cursor: pointer; }
+      cursor: pointer;
+      overflow: hidden; }
       nav.boxes ul li:hover div.overlay, nav.boxes-items ul li:hover div.overlay {
         opacity: 0; }
       nav.boxes ul li img, nav.boxes-items ul li img {
@@ -144,14 +145,6 @@ nav.boxes-items ul {
     nav.boxes-items ul li a {
       position: relative; }
 
-footer nav.boxes-items ul li {
-  opacity: 1;
-  -webkit-transform: none;
-  -ms-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
-  transform: none; }
-
 #item-media {
   width: 67.5%;
   max-width: 625px;
@@ -204,36 +197,27 @@ p.abstract {
 
 footer {
   background-color: #15161d;
-  padding-top: 40px; }
+  padding: 10px 0 40px; }
 
-#sub-view {
+footer nav.boxes-items ul {
+  overflow: hidden; }
+  footer nav.boxes-items ul li {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    transform: none; }
+
+#sub-view.ng-enter {
   -webkit-transition: 0.5s linear opacity;
   -ms-transition: 0.5s linear opacity;
   -moz-transition: 0.5s linear opacity;
   -o-transition: 0.5s linear opacity;
-  transition: 0.5s linear opacity; }
-  #sub-view.ng-enter {
-    -webkit-transition-delay: 0.1s;
-    -ms-transition-delay: 0.1s;
-    -moz-transition-delay: 0.1s;
-    -o-transition-delay: 0.1s;
-    transition-delay: 0.1s;
-    position: absolute;
-    width: 960px;
-    opacity: 0; }
-  #sub-view.ng-enter.ng-enter-active {
-    opacity: 1; }
-  #sub-view.ng-leave {
-    -webkit-transition: 0.1s linear opacity;
-    -ms-transition: 0.1s linear opacity;
-    -moz-transition: 0.1s linear opacity;
-    -o-transition: 0.1s linear opacity;
-    transition: 0.1s linear opacity;
-    position: absolute;
-    width: 960px;
-    opacity: 1; }
-  #sub-view.ng-leave.ng-leave-active {
-    opacity: 0; }
+  transition: 0.5s linear opacity;
+  opacity: 0; }
+#sub-view.ng-enter.ng-enter-active {
+  opacity: 1; }
 
 section.contact {
   -webkit-transition: 0.3s ease-out height;

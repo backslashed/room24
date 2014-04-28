@@ -1,39 +1,42 @@
+<div class="aligner">
+    <section class="body"><h1 ng-bind="content.item.title"></h1></section>
 
-<section class="body"><h1 ng-bind="content.item.title"></h1></section>
+    <iframe id="item-media" type="text/html" height="385" ng-src="{{content.mediaUri}}" allowfullscreen frameborder="0"></iframe>
 
-<iframe id="item-media" type="text/html" height="385" ng-src="{{content.mediaUri}}" allowfullscreen frameborder="0"></iframe>
+    <section class="details">
+        <span class="label">Client</span>
+        {{content.item.client}}
 
-<section class="details">
-    <span class="label">Client</span>
-    {{content.item.client}}
+        <span class="label">Director</span>
+        {{content.item.director}}
 
-    <span class="label">Director</span>
-    {{content.item.director}}
+        <span class="label">Agency</span>
+        {{content.item.agency}}
 
-    <span class="label">Agency</span>
-    {{content.item.agency}}
+        <span class="label spaced">Share</span>
+        <a class="twitter-link" href="#"></a>
+        <a class="facebook-link" href="#"></a>
+        <a class="youtube-link" href="#"></a>
+        <a class="google-link" href="#"></a>
+    </section>
 
-    <span class="label spaced">Share</span>
-    <a class="twitter-link" href="#"></a>
-    <a class="facebook-link" href="#"></a>
-    <a class="youtube-link" href="#"></a>
-    <a class="google-link" href="#"></a>
-</section>
-
-<p class="abstract">
-    {{content.item.body}}
-</p>
+    <p class="abstract">
+        {{content.item.body}}
+    </p>
+</div>
 
 <footer>
-    <nav class="boxes-items">
-        <ul>
-            <li ng-repeat="item in content.siblings">
-                <img ng-src="{{item.thumbnail}}" alt="{{item.title}}" />
-                <a href="#/category/{{item.category_id}}/{{item.id}}">
-                    <p>{{item.title}}<br />{{item.description}}<br /><span class="faded">{{item.agency}}</span></p>
-                </a>
-                <div class="overlay"></div>
-            </li>
-        </ul>
-    </nav>
+    <div class="aligner">
+        <nav class="boxes-items">
+            <ul>
+                <li ng-repeat="item in content.siblings">
+                    <img ng-src="{{item.thumbnail}}" alt="{{item.title}}" />
+                    <a href="#/category/{{item.category_id}}/{{item.id}}">
+                        <p>{{item.title}}<br />{{item.description}}<br /><span class="faded">{{item.agency}}</span></p>
+                    </a>
+                    <div class="overlay"></div>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </footer>
