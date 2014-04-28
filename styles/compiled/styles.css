@@ -13,7 +13,8 @@ a {
 div.aligner {
   margin: 0 auto;
   width: 100%;
-  max-width: 960px; }
+  max-width: 1040px;
+  padding: 0 40px; }
 
 section.contact {
   background: #000;
@@ -252,11 +253,11 @@ nav.boxes section.body h1, nav.boxes-items section.body h1, nav.boxes main secti
   -moz-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  -webkit-transition: 0.5s linear all;
-  -ms-transition: 0.5s linear all;
-  -moz-transition: 0.5s linear all;
-  -o-transition: 0.5s linear all;
-  transition: 0.5s linear all;
+  -webkit-transition: 0.35s linear all;
+  -ms-transition: 0.35s linear all;
+  -moz-transition: 0.35s linear all;
+  -o-transition: 0.35s linear all;
+  transition: 0.35s linear all;
   opacity: 1; }
   nav.boxes section.body h1.getOut.getOut-add, nav.boxes-items section.body h1.getOut.getOut-add, nav.boxes main section.body-short h1.getOut.getOut-add, main nav.boxes section.body-short h1.getOut.getOut-add, nav.boxes-items main section.body-short h1.getOut.getOut-add, main nav.boxes-items section.body-short h1.getOut.getOut-add {
     -webkit-transform: translate3d(0, 0, 0);

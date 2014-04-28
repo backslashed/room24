@@ -13,7 +13,7 @@ R24.NavBox = ['$interpolate', '$animate', '$location', function($interpolate, $a
             boxTemplate  = '<li><img src="{{thumbnail}}" alt="{{title}}" /><a><p>{{title}}</p></a><div class="overlay"></div></li>',
 
             popOldItems = function(items) {
-                TweenMax.staggerTo(items, 0.3, { opacity: 0, scale: 0.95 }, 0.5 / items.length);
+                TweenMax.staggerTo(items, 0.3, { opacity: 0, scale: 0.95 }, 0.35 / items.length);
             },
 
             pushNewItems = function(newItems) {
@@ -44,7 +44,7 @@ R24.NavBox = ['$interpolate', '$animate', '$location', function($interpolate, $a
                     container.append(el);
                 });
 
-                TweenMax.staggerTo(container.children(), 0.5, { opacity: 1, scale: 1 }, 0.07);
+                TweenMax.staggerTo(container.children(), 0.35, { opacity: 1, scale: 1 }, 0.05);
             };
 
         scope.$watch('ngModel', function(newVal, oldVal) {

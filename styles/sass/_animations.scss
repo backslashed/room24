@@ -39,7 +39,7 @@ header nav ul li {
 nav.boxes {
   section.body h1 {
     @include vendor-prefix(transform, translate3d(0, 0, 0));
-    @include vendor-prefix(transition, 0.5s linear all);
+    @include vendor-prefix(transition, 0.35s linear all);
     opacity: 1;
 
     &.getOut.getOut-add {
