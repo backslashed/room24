@@ -38,7 +38,7 @@ R24.NavBox = ['$interpolate', '$animate', function($interpolate, $animate) {
                         $animate.removeClass(header, 'getOut');
                     });
 
-                    TweenMax.staggerTo(container.children(), 0.4, { opacity: 0, scale: 0.95 }, 0.1, function() {
+                    TweenMax.staggerTo(container.children(), 0.3, { opacity: 0, scale: 0.95 }, 0.1, function() {
                         pushNewItems(newVal);
                     });
                 } else {

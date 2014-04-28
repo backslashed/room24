@@ -279,11 +279,11 @@ nav.boxes section.body h1, nav.boxes-items section.body h1, nav.boxes main secti
   opacity: 1; }
 
 nav.boxes section.body h1.getOut.getOut-add, nav.boxes-items section.body h1.getOut.getOut-add, nav.boxes main section.body-short h1.getOut.getOut-add, main nav.boxes section.body-short h1.getOut.getOut-add, nav.boxes-items main section.body-short h1.getOut.getOut-add, main nav.boxes-items section.body-short h1.getOut.getOut-add {
-  -webkit-transition: 0.6s ease-out all;
-  -ms-transition: 0.6s ease-out all;
-  -moz-transition: 0.6s ease-out all;
-  -o-transition: 0.6s ease-out all;
-  transition: 0.6s ease-out all;
+  -webkit-transition: 0.5s ease-out all;
+  -ms-transition: 0.5s ease-out all;
+  -moz-transition: 0.5s ease-out all;
+  -o-transition: 0.5s ease-out all;
+  transition: 0.5s ease-out all;
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
