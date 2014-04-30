@@ -80,6 +80,16 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
         return defer.promise;
     }
 
+    /* Extracts items that are in specified category */
+
+    var getItemsInCategory = function(items, id) {
+        return _(items).filter(function(item) {
+            return _.contains(item.category_id, id);
+        });
+    }
+
+    /* Creates slides array of objects for navigating portfolio */
+
     var transformContent = function(result) {
         var slides = [{
             "body": result.data.pages["home"].body,
@@ -90,7 +100,7 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
         angular.forEach(result.data.categories, function(val) {
             slides.push({
                 "body": val.body,
-                "items": _(result.data.items).where({ category_id: val.id }),
+                "items": getItemsInCategory(result.data.items, val.id),
                 "boxClass": "boxes-items"
             });
         });
@@ -114,7 +124,7 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
             return getContent().then(function(response) {
                 return angular.isUndefined(response) ?
                     angular.noop : {
-                        items: _(response.data.items).where({ category_id: categoryId}),
+                        items: getItemsInCategory(response.data.items, categoryId),
                         category: _(response.data.categories).findWhere({ id: categoryId })
                     }
             });
