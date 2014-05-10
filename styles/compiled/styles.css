@@ -4,7 +4,7 @@
 body {
   background-color: #1e1f2a;
   color: #cccccc;
-  font: 400 14px/21px "Helvetica Neue";
+  font: 400 14px/21px "Helvetica Neue", "Helvetica";
   margin: 0; }
 
 a {
@@ -57,7 +57,7 @@ header {
       header menu menuitem:first-child {
         margin-right: 30px; }
       header menu menuitem a {
-        font: 400 14px/21px "Helvetica Neue";
+        font: 400 14px/21px "Helvetica Neue", "Helvetica";
         text-transform: uppercase;
         text-decoration: none; }
   header nav ul {
@@ -68,7 +68,7 @@ header {
       float: left;
       margin-right: 30px; }
       header nav ul li a {
-        font: 600 14px/18px "Helvetica Neue";
+        font: 600 14px/18px "Helvetica Neue", "Helvetica";
         color: #256682;
         display: block;
         text-decoration: none;
@@ -86,7 +86,7 @@ header {
       clear: both; }
 
 main h1, main h2 {
-  font: 100 50px/52px "Helvetica Neue";
+  font: 100 50px/52px "Helvetica Neue", "Helvetica";
   color: #33ccff; }
 main h2 {
   font: 400 24px/40px "Helvetica Neue"; }
@@ -135,7 +135,7 @@ nav.boxes ul, nav.boxes-items ul {
       display: table;
       width: 100%;
       height: 100%;
-      font: 600 14px/18px "Helvetica Neue";
+      font: 600 14px/18px "Helvetica Neue", "Helvetica";
       text-transform: uppercase;
       text-decoration: none;
       text-align: center;
@@ -253,11 +253,11 @@ footer nav.boxes-items ul {
 #sub-view {
   *zoom: 1; }
 #sub-view.ng-enter {
-  -webkit-transition: 0.5s linear opacity;
-  -ms-transition: 0.5s linear opacity;
-  -moz-transition: 0.5s linear opacity;
-  -o-transition: 0.5s linear opacity;
-  transition: 0.5s linear opacity;
+  -webkit-transition: 0.4s ease-out all;
+  -ms-transition: 0.4s ease-out all;
+  -moz-transition: 0.4s ease-out all;
+  -o-transition: 0.4s ease-out all;
+  transition: 0.4s ease-out all;
   opacity: 0; }
 #sub-view.ng-enter.ng-enter-active {
   opacity: 1; }
@@ -268,7 +268,7 @@ section.contact {
   -moz-transition: 0.3s ease-out height;
   -o-transition: 0.3s ease-out height;
   transition: 0.3s ease-out height;
-  font: 400 14px/21px "Helvetica Neue";
+  font: 400 14px/21px "Helvetica Neue", "Helvetica";
   color: #FFF;
   overflow: hidden;
   background: #000;

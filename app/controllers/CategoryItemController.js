@@ -10,7 +10,7 @@ R24.CategoryItemController = ['$scope', '$stateParams', 'DataSource', '$sce', fu
 
     dataSource.getItem(itemId).then(function(data) {
         $scope.content.item = data;
-        $scope.content.mediaUri = $sce.trustAsResourceUrl("//player.vimeo.com/video/" + $scope.content.item.media_url);
+        $scope.content.mediaUri = $sce.trustAsResourceUrl("//player.vimeo.com/video/" + $scope.content.item.media_url + "?title=0&byline=0&badge=1&portrait=0&color=33ccff");
     });
 
     dataSource.getCategory(categoryId).then(function(data) {

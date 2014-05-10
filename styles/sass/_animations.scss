@@ -3,7 +3,7 @@
   @include clearFix();
 
   &.ng-enter {
-    @include vendor-prefix(transition, 0.5s linear opacity);
+    @include vendor-prefix(transition, 0.4s ease-out all);
     opacity: 0;
   }
 
