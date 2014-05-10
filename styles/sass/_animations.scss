@@ -1,5 +1,6 @@
 
 #sub-view {
+  @include clearFix();
 
   &.ng-enter {
     @include vendor-prefix(transition, 0.5s linear opacity);
@@ -13,11 +14,24 @@
 
 section.contact {
   @include vendor-prefix(transition, 0.3s ease-out height);
-  height: 0px;
+  font: $font-regular;
+  color: #FFF;
   overflow: hidden;
+  background: #000;
+  width: 100%;
+  height: 0;
+  display: block;
+
+  .label {
+    text-transform: uppercase;
+  }
+
+  .aligner {
+    padding-top: 30px;
+  }
 
   &.active {
-    height: 60px;
+    height: 78px;
   }
 }
 

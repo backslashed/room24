@@ -83,6 +83,7 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
     var transformContent = function(result) {
         var slides = [{
             "body": result.data.pages["home"].body,
+            "contact": result.data.pages["contact"],
             "items": result.data.categories,
             "boxClass": "boxes"
         }];

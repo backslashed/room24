@@ -1,6 +1,8 @@
 <section class="contact" ng-class="{ active: contactVisible }">
     <div class="aligner">
-        asdkahjs dkash dkjash dasjkhd askj
+        <span class="phone"><span class="label">Phone </span>{{content.slides[0].contact.phone}}</span>
+        <span class="email"><span class="label">E-mail </span>{{content.slides[0].contact.email}}</span>
+        <span class="map_link"><a target="_blank" ng-href="{{content.slides[0].contact.map_link}}">MAP</a></span>
     </div>
 </section>
 

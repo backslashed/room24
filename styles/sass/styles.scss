@@ -22,6 +22,25 @@ $blue-dark: #15161d;
   #{$name}: #{$argument};
 }
 
+@mixin clearFix(){
+  &:before,
+  &:after{
+    content: " ";
+    display: table;
+  }
+
+  &:after{
+    display: block;
+    clear: both;
+    height: 1px;
+    margin-top: -1px;
+    visibility: hidden;
+  }
+  &{
+    *zoom: 1;
+  }
+}
+
 @import "page";
 @import "boxes";
 @import "item";

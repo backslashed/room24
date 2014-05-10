@@ -80,6 +80,10 @@ nav.boxes {
 
 nav.boxes-items {
   @extend nav.boxes;
+  @include clearFix();
+
+  padding-bottom: 112px;
+
   ul {
     cursor: pointer;
 

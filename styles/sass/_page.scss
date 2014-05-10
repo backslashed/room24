@@ -9,21 +9,15 @@ body {
 a { color: $text-menu-highlight-color; }
 
 div.aligner {
+  @include clearFix();
   margin: 0 auto;
   width: 100%;
   max-width: 1040px;
   padding: 0 40px;
 }
 
-section.content {
-  //@extend div.aligner;
-}
-
-section.contact {
-  background: #000;
-  width: 100%;
-  height: 80px;
-  display: block;
+#page, section.content {
+  @include clearFix();
 }
 
 header {
@@ -101,6 +95,11 @@ main {
   h1 {
     font: $font-thin;
     color: $text-header-color;
+  }
+
+  h2 {
+    @extend h1;
+    font: 400 24px/40px 'Helvetica Neue'
   }
 
   section.body {

@@ -4,7 +4,9 @@ R24.CategoryItemController = ['$scope', '$stateParams', 'DataSource', '$sce', fu
     var itemId = $stateParams['item_id'],
         categoryId = $stateParams['category_id'];
 
-    $scope.content = {};
+    $scope.content = {
+        categoryId: categoryId
+    };
 
     dataSource.getItem(itemId).then(function(data) {
         $scope.content.item = data;
