@@ -96,61 +96,59 @@ main section.body-short {
   width: 100%;
   max-width: 800px; }
 
-nav.boxes, nav.boxes-items {
-  margin-top: 30px; }
-  nav.boxes ul, nav.boxes-items ul {
-    margin: 0;
-    padding: 0; }
-    nav.boxes ul li, nav.boxes-items ul li {
-      list-style: none;
-      float: left;
-      position: relative;
-      width: 320px;
-      height: 175px;
-      display: block;
-      opacity: auto;
-      cursor: pointer;
-      overflow: hidden; }
-      nav.boxes ul li:hover div.overlay, nav.boxes-items ul li:hover div.overlay {
-        opacity: 0; }
-      nav.boxes ul li img, nav.boxes-items ul li img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        width: 100%;
-        height: 100%; }
-      nav.boxes ul li div.overlay, nav.boxes-items ul li div.overlay {
-        width: 101%;
-        height: 101%;
-        position: absolute;
-        top: -1px;
-        left: -1px;
-        opacity: 0.8;
-        background-color: #000;
-        z-index: 2; }
-      nav.boxes ul li a, nav.boxes-items ul li a {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 3;
-        display: table;
-        width: 100%;
-        height: 100%;
-        font: 600 14px/18px "Helvetica Neue";
-        text-transform: uppercase;
-        text-decoration: none;
-        text-align: center;
-        vertical-align: middle; }
-        nav.boxes ul li a p, nav.boxes-items ul li a p {
-          display: table-cell;
-          vertical-align: middle;
-          font-weight: 800;
-          padding: 0 35px;
-          -webkit-text-size-adjust: 100%;
-          -webkit-font-smoothing: antialiased; }
-        nav.boxes ul li a span.faded, nav.boxes-items ul li a span.faded {
-          color: #256682; }
+nav.boxes ul, nav.boxes-items ul {
+  margin: 0;
+  padding: 0; }
+  nav.boxes ul li, nav.boxes-items ul li {
+    list-style: none;
+    float: left;
+    position: relative;
+    width: 320px;
+    height: 175px;
+    display: block;
+    opacity: auto;
+    cursor: pointer;
+    overflow: hidden; }
+    nav.boxes ul li:hover div.overlay, nav.boxes-items ul li:hover div.overlay {
+      opacity: 0; }
+    nav.boxes ul li img, nav.boxes-items ul li img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%; }
+    nav.boxes ul li div.overlay, nav.boxes-items ul li div.overlay {
+      width: 101%;
+      height: 101%;
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      opacity: 0.8;
+      background-color: #000;
+      z-index: 2; }
+    nav.boxes ul li a, nav.boxes-items ul li a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      display: table;
+      width: 100%;
+      height: 100%;
+      font: 600 14px/18px "Helvetica Neue";
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      vertical-align: middle; }
+      nav.boxes ul li a p, nav.boxes-items ul li a p {
+        display: table-cell;
+        vertical-align: middle;
+        font-weight: 800;
+        padding: 0 35px;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased; }
+      nav.boxes ul li a span.faded, nav.boxes-items ul li a span.faded {
+        color: #256682; }
 
 nav.boxes-items {
   padding-bottom: 112px; }
