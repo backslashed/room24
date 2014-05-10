@@ -13,7 +13,6 @@ R24.CategoryItemController = ['$scope', '$stateParams', 'DataSource', '$sce', fu
 
     dataSource.getCategory(categoryId).then(function(data) {
         $scope.content.siblings = _(data.items).without(_(data.items).findWhere({ id: parseInt(itemId, 10) }));
-        console.log(_(data.items).findWhere({ id: parseInt(itemId, 10) }));
     });
 
 }];
