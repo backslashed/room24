@@ -127,6 +127,7 @@ nav.boxes, nav.boxes-items {
           display: table-cell;
           vertical-align: middle;
           font-weight: 800;
+          padding: 0 35px;
           -webkit-text-size-adjust: 100%;
           -webkit-font-smoothing: antialiased; }
         nav.boxes ul li a span.faded, nav.boxes-items ul li a span.faded {
@@ -198,7 +199,7 @@ p.abstract {
 
 footer {
   background-color: #15161d;
-  padding: 10px 0 40px; }
+  padding: 45px 0 112px; }
 
 footer nav.boxes-items ul {
   overflow: hidden; }

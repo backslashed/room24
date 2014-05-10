@@ -49,7 +49,7 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
         }
     }
 
-    /* Preload category menu thumbnails */
+    /* Preload thumbnails */
 
     function preloadThumbnails(result) {
         var defer = $q.defer();
@@ -90,12 +90,19 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
         angular.forEach(result.data.categories, function(val) {
             slides.push({
                 "body": val.body,
-                "items": _(result.data.items).where({ category_id: val.id }),
+                "items": filterCategoryItems(val.id, result.data.items),
+                "category_id": val.id,
                 "boxClass": "boxes-items"
             });
         });
 
         return slides;
+    }
+
+    var filterCategoryItems = function(categoryId, items) {
+        return _(items).filter(function(item) {
+            return item.category_id.indexOf(categoryId) !== -1;
+        });
     }
 
     /* Filter fetched content */
@@ -114,8 +121,8 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
             return getContent().then(function(response) {
                 return angular.isUndefined(response) ?
                     angular.noop : {
-                        items: _(response.data.items).where({ category_id: categoryId}),
-                        category: _(response.data.categories).findWhere({ id: categoryId })
+                        items: filterCategoryItems(parseInt(categoryId, 10), response.data.items),
+                        category: _(response.data.categories).findWhere({ id: parseInt(categoryId, 10) })
                     }
             });
         },
@@ -123,7 +130,7 @@ R24.DataSourceProvider = ['$http', '$rootScope', '$timeout', '$q', 'API_URI', fu
         getItem: function(itemId) {
             return getContent().then(function(response) {
                 return angular.isUndefined(response) ?
-                    angular.noop : _(response.data.items).findWhere({ id: itemId });
+                    angular.noop : _(response.data.items).findWhere({ id: parseInt(itemId, 10) });
             });
         },
 

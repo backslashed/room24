@@ -11,7 +11,7 @@ var app = angular.module('Room24', [
 ]);
 
 app.
-    constant('API_URI', 'static/content.json').
+    constant('API_URI', 'static/content.live.json').
 
     config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
         $urlRouterProvider.otherwise('/');
