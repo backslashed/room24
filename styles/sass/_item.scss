@@ -16,7 +16,7 @@
   opacity: 0;
   position: relative;
   z-index: 15;
-  @include vendor-prefix(transform, scale(0.9));
+  @include vendor-prefix(transform, scale(0.93));
 }
 
 section.details {
