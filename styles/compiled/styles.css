@@ -261,6 +261,14 @@ nav.boxes-items {
   -moz-transform: scale(0.93);
   -o-transform: scale(0.93);
   transform: scale(0.93); }
+  @media screen and (max-width: 920px) {
+    #item-media {
+      -webkit-transform: none;
+      -ms-transform: none;
+      -moz-transform: none;
+      -o-transform: none;
+      transform: none;
+      opacity: 1; } }
 
 section.details {
   width: 30%;
