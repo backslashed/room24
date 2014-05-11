@@ -1,5 +1,5 @@
 
-R24.CategoryController = ['$scope', 'DataSource', '$location', '$anchorScroll', function($scope, dataSource, $location, $anchorScroll) {
+R24.CategoryController = ['$scope', 'DataSource', '$location', '$anchorScroll', '$rootScope', function($scope, dataSource, $location, $anchorScroll, $rootScope) {
 
     var preselectedSlide = angular.isDefined($location.search().slide) ? $location.search().slide : 0;
 
@@ -11,6 +11,8 @@ R24.CategoryController = ['$scope', 'DataSource', '$location', '$anchorScroll', 
                 categories: data[0].items
             }
         });
+
+    $rootScope.backButtonText = "HOME";
 
     $scope.isActive = function(cId) {
         return cId == $scope.content.activeSlide - 1;
@@ -24,6 +26,8 @@ R24.CategoryController = ['$scope', 'DataSource', '$location', '$anchorScroll', 
 
     $scope.$on('$locationChangeStart', function() {
         $scope.contactVisible = false;
+
+        $rootScope.backButtonText = "HOME";
 
         if(angular.isDefined($location.search().slide)) {
             $scope.content.activeSlide = $location.search().slide;

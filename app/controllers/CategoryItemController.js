@@ -1,5 +1,5 @@
 
-R24.CategoryItemController = ['$scope', '$stateParams', 'DataSource', '$sce', function($scope, $stateParams, dataSource, $sce) {
+R24.CategoryItemController = ['$scope', '$stateParams', 'DataSource', '$sce', '$rootScope', function($scope, $stateParams, dataSource, $sce, $rootScope) {
 
     var itemId = $stateParams['item_id'],
         categoryId = $stateParams['category_id'];
@@ -17,6 +17,7 @@ R24.CategoryItemController = ['$scope', '$stateParams', 'DataSource', '$sce', fu
 
     dataSource.getCategory(categoryId).then(function(data) {
         $scope.content.siblings = _(data.items).without(_(data.items).findWhere({ id: parseInt(itemId, 10) }));
+        $rootScope.backButtonText = data.category.title;
     });
 
     // Vimeo load

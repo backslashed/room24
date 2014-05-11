@@ -15,7 +15,11 @@
             </menu>
 
             <nav>
-                <ul>
+                <ul ng-show="content.activeSlide != 0 || !backButtonText" class="mobile">
+                    <li><a href="javascript:history.back()">{{backButtonText}}</a></li>
+                </ul>
+
+                <ul class="screen">
                     <li ng-repeat="category in content.categories">
                         <a ng-class="{ active: isActive($index) }" ng-href="#/?slide={{$index + 1}}">
                             {{category.title}}

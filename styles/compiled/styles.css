@@ -26,6 +26,9 @@ div.aligner {
     visibility: hidden; }
   div.aligner {
     *zoom: 1; }
+  @media screen and (max-width: 720px) {
+    div.aligner {
+      padding: 0 20px; } }
 
 #page:before, #page:after, section.content:before, section.content:after {
   content: " ";
@@ -49,6 +52,9 @@ header {
     margin-right: 0; }
     header figure img {
       border: 0px; }
+      @media screen and (max-width: 720px) {
+        header figure img {
+          width: 90px; } }
   header menu {
     padding: 20px 0;
     margin-bottom: 13px; }
@@ -60,25 +66,49 @@ header {
         font: 400 14px/21px "Helvetica Neue", "Helvetica";
         text-transform: uppercase;
         text-decoration: none; }
-  header nav ul {
-    margin: 0;
+  header nav ul.mobile {
+    display: none;
     padding: 0; }
-    header nav ul li {
+    @media screen and (max-width: 720px) {
+      header nav ul.mobile {
+        display: block; } }
+    header nav ul.mobile li {
+      list-style: none;
+      margin: 0; }
+      header nav ul.mobile li a {
+        text-transform: uppercase;
+        color: #33ccff;
+        text-decoration: none;
+        font-size: 16px; }
+        header nav ul.mobile li a:before {
+          content: "< ";
+          display: block;
+          float: left;
+          margin: -1px 0 0 0;
+          padding-right: 10px; }
+  header nav ul.screen {
+    margin: 0;
+    padding: 0 70px 0 0; }
+    @media screen and (max-width: 720px) {
+      header nav ul.screen {
+        display: none; } }
+    header nav ul.screen li {
       list-style: none;
       float: left;
       margin-right: 30px; }
-      header nav ul li a {
+      header nav ul.screen li a {
         font: 600 14px/18px "Helvetica Neue", "Helvetica";
         color: #256682;
         display: block;
         text-decoration: none;
         text-transform: uppercase;
         border-bottom: 1px solid transparent;
-        cursor: pointer; }
-        header nav ul li a:hover, header nav ul li a.active {
+        cursor: pointer;
+        line-height: 25px; }
+        header nav ul.screen li a:hover, header nav ul.screen li a.active {
           color: white;
           border-color: white; }
-    header nav ul:after {
+    header nav ul.screen:after {
       content: '.';
       visibility: hidden;
       display: block;
@@ -88,10 +118,17 @@ header {
 main h1, main h2 {
   font: 100 50px/52px "Helvetica Neue", "Helvetica";
   color: #33ccff; }
+  @media screen and (max-width: 720px) {
+    main h1, main h2 {
+      font-size: 32px;
+      line-height: 36px; } }
 main h2 {
   font: 400 24px/40px "Helvetica Neue"; }
 main section.body, main section.body-short {
   margin-top: 60px; }
+  @media screen and (max-width: 720px) {
+    main section.body, main section.body-short {
+      margin-top: 30px; } }
 main section.body-short {
   width: 100%;
   max-width: 800px; }
