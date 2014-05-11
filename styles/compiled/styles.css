@@ -79,7 +79,8 @@ header {
         text-transform: uppercase;
         color: #33ccff;
         text-decoration: none;
-        font-size: 16px; }
+        font-size: 16px;
+        cursor: pointer; }
         header nav ul.mobile li a:before {
           content: "< ";
           display: block;

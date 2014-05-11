@@ -1,5 +1,6 @@
 
-R24.CategoryController = ['$scope', 'DataSource', '$location', '$anchorScroll', '$rootScope', function($scope, dataSource, $location, $anchorScroll, $rootScope) {
+R24.CategoryController = ['$scope', 'DataSource', '$location', '$anchorScroll', '$rootScope',
+    function($scope, dataSource, $location, $anchorScroll, $rootScope) {
 
     var preselectedSlide = angular.isDefined($location.search().slide) ? $location.search().slide : 0;
 
@@ -33,6 +34,17 @@ R24.CategoryController = ['$scope', 'DataSource', '$location', '$anchorScroll', 
             $scope.content.activeSlide = $location.search().slide;
         }
     });
+
+    $scope.goBack = function() {
+        var locationParams = $location.url().split('/');
+
+        if(locationParams[1] === 'category') {
+            history.back();
+            return true;
+        }
+
+        $scope.content.activeSlide = 0;
+    }
 
     $scope.$on('$stateChangeSuccess', function() { $anchorScroll(); });
 }];

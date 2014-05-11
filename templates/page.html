@@ -16,7 +16,7 @@
 
             <nav>
                 <ul ng-show="content.activeSlide != 0 || !backButtonText" class="mobile">
-                    <li><a href="javascript:history.back()">{{backButtonText}}</a></li>
+                    <li><a ng-click="goBack()">{{backButtonText}}</a></li>
                 </ul>
 
                 <ul class="screen">

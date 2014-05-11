@@ -21,7 +21,7 @@ R24.CategoryItemController = ['$scope', '$stateParams', 'DataSource', '$sce', '$
     });
 
     // Vimeo load
-
+    //
     var mediaFrame = document.getElementById('item-media');
 
     var post = function(method, value) {
