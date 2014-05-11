@@ -19,6 +19,8 @@ R24.CategoryItemController = ['$scope', '$stateParams', 'DataSource', '$sce', fu
         $scope.content.siblings = _(data.items).without(_(data.items).findWhere({ id: parseInt(itemId, 10) }));
     });
 
+    // Vimeo load
+
     var mediaFrame = document.getElementById('item-media');
 
     var post = function(method, value) {
@@ -39,8 +41,8 @@ R24.CategoryItemController = ['$scope', '$stateParams', 'DataSource', '$sce', fu
     function onMessageReceived(e) {
         var data = JSON.parse(e.data);
 
-        if( data.event === 'loadProgress' && data.data.seconds > 5 && !hasLoaded || data.event === 'play') {
-            TweenMax.to(mediaFrame, 0.6, { opacity: 1, scale: 1 });
+        if( data.event === 'play') {
+            TweenMax.to(mediaFrame, 0.3, { opacity: 1, scale: 1 });
             hasLoaded = true;
         }
     }
