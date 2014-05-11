@@ -33,9 +33,11 @@
             <ul>
                 <li ng-repeat="item in content.siblings">
                     <img ng-src="{{item.thumbnail}}" alt="{{item.title}}" />
-                    <a href="#/category/{{content.categoryId}}/{{item.id}}">
-                        <p>{{item.title}}<br />{{item.description}}<br /><span class="faded">{{item.agency}}</span></p>
-                    </a>
+                    <div class="hover-wrapper">
+                        <a href="#/category/{{content.categoryId}}/{{item.id}}">
+                            <p>{{item.title}}<br />{{item.description}}<br /><span class="faded">{{item.agency}}</span></p>
+                        </a>
+                    </div>
                     <div class="overlay"></div>
                 </li>
             </ul>

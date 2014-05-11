@@ -265,10 +265,25 @@ section.details {
   color: #33ccff;
   line-height: 18px;
   margin: 0 0 0 2.5%; }
+  @media screen and (max-width: 720px) {
+    section.details {
+      clear: left;
+      padding: 20px 0 0 0;
+      margin: 0; } }
   section.details span.label {
     display: block;
     margin-top: 25px;
     color: #fff; }
+    @media screen and (max-width: 720px) {
+      section.details span.label {
+        float: left;
+        margin-top: 5px; }
+        section.details span.label:before {
+          content: '.';
+          visibility: hidden;
+          clear: left;
+          display: block;
+          height: 0; } }
     section.details span.label:first-child {
       margin-top: 0 !important; }
     section.details span.label.spaced {

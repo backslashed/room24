@@ -26,10 +26,29 @@ section.details {
   line-height: 18px;
   margin: 0 0 0 2.5%;
 
+  @media screen and (max-width: 720px) {
+    clear: left;
+    padding: 20px 0 0 0;
+    margin: 0;
+  }
+
   span.label {
     display: block;
     margin-top: 25px;
     color: #fff;
+
+    @media screen and (max-width: 720px) {
+      float: left;
+      margin-top: 5px;
+
+      &:before {
+        content: '.';
+        visibility: hidden;
+        clear: left;
+        display: block;
+        height: 0;
+      }
+    }
 
     &:first-child {
       margin-top: 0 !important;
