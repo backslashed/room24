@@ -6,7 +6,7 @@
 
 R24.NavBox = ['$interpolate', '$animate', '$location', function($interpolate, $animate, $location) {
 
-    var linkFn = function(scope, elem, attr) {
+    var linkFn = function(scope, elem) {
         var container    = angular.element(elem.children()[1]),
             header       = angular.element(elem.children()[0]).children(),
             itemTemplate = '<li><img src="{{thumbnail}}" alt="{{title}}" /><div class="hover-wrapper"><a><p>{{title}}<br />{{description}}<br /><span class="faded">{{agency}}</span></p></a></div><div class="overlay"></div></li>',
