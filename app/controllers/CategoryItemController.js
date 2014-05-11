@@ -31,6 +31,8 @@ R24.CategoryItemController = ['$scope', '$stateParams', 'DataSource', '$sce', fu
     angular.element(mediaFrame).bind('load', function() {
         post('addEventListener', 'loadProgress');
         post('addEventListener', 'play');
+        post('addEventListener', 'pause');
+        // + ready
         post('play', '');
     });
 
@@ -43,7 +45,10 @@ R24.CategoryItemController = ['$scope', '$stateParams', 'DataSource', '$sce', fu
 
         if( data.event === 'play') {
             TweenMax.to(mediaFrame, 0.3, { opacity: 1, scale: 1 });
+            angular.element(document.getElementsByTagName('footer')[0]).addClass('dim');
             hasLoaded = true;
+        } else if ( data.event === 'pause' ) {
+            angular.element(document.getElementsByTagName('footer')[0]).removeClass('dim');
         }
     }
 }];

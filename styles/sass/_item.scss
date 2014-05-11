@@ -72,6 +72,19 @@ footer {
   padding: 45px 0 0;
 }
 
+footer.dim:hover nav.boxes-items {
+  opacity: 1;
+}
+
+footer.dim nav.boxes-items {
+  opacity: 0.8;
+
+}
+
+nav.boxes-items {
+  @include vendor-prefix(transition, 0.3s ease-out all);
+}
+
 footer nav.boxes-items {
   ul {
     overflow: hidden;
