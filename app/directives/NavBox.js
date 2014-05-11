@@ -9,8 +9,8 @@ R24.NavBox = ['$interpolate', '$animate', '$location', function($interpolate, $a
     var linkFn = function(scope, elem) {
         var container    = angular.element(elem.children()[1]),
             header       = angular.element(elem.children()[0]).children(),
-            itemTemplate = '<li><img src="{{thumbnail}}" alt="{{title}}" /><div class="hover-wrapper"><a><p>{{title}}<br />{{description}}<br /><span class="faded">{{agency}}</span></p></a></div><div class="overlay"></div></li>',
-            boxTemplate  = '<li><img src="{{thumbnail}}" alt="{{title}}" /><div class="hover-wrapper"><a><p>{{title}}</p></a></div><div class="overlay"></div></li>',
+            itemTemplate = '<li><img src="{{thumbnail}}" alt="{{title}}" /><div class="hover-wrapper"><a href="#"><p>{{title}}<br />{{description}}<br /><span class="faded">{{agency}}</span></p></a></div><div class="overlay"></div></li>',
+            boxTemplate  = '<li><img src="{{thumbnail}}" alt="{{title}}" /><div class="hover-wrapper"><a href="#"><p>{{title}}</p></a></div><div class="overlay"></div></li>',
 
             popOldItems = function(items) {
                 TweenMax.staggerTo(items, 0.3, { opacity: 0, scale: 0.95 }, 0.35 / items.length);
@@ -27,6 +27,8 @@ R24.NavBox = ['$interpolate', '$animate', '$location', function($interpolate, $a
                     var el = angular.element(template(item));
 
                     el.bind('click', function() {
+                        TweenMax.to(window, 0.35, {scrollTo: {y: 0}});
+
                         if(newItems.boxClass === 'boxes') {
                             scope.activeSlide = key + 1;
                             scope.$apply();

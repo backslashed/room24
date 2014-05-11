@@ -19,7 +19,8 @@ require(['libs/angular.min'], function() {
        'libs/angular-touch.min',
        'libs/angular-ui-router.min',
        'libs/underscore-min',
-       'TweenMax'], function() {
+       'TweenMax',
+       'libs/ScrollToPlugin'], function() {
 
        require([
            'controllers/CategoryController',
