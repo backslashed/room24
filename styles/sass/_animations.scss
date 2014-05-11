@@ -103,6 +103,6 @@ nav.boxes-items ul li:hover a {
 }
 
 nav.boxes-items ul li a {
-  @include vendor-prefix(transform, translate3d(0, 165px, 0));
+  @include vendor-prefix(transform, translate3d(0, 170px, 0));
   @include vendor-prefix(transition, 0.2s ease-out all);
 }

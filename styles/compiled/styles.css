@@ -133,6 +133,15 @@ main section.body-short {
   width: 100%;
   max-width: 800px; }
 
+div.hover-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
 nav.boxes ul, nav.boxes-items ul {
   margin: 0;
   padding: 0; }
@@ -141,17 +150,32 @@ nav.boxes ul, nav.boxes-items ul {
     float: left;
     position: relative;
     width: 320px;
-    height: 175px;
-    display: block;
+    height: auto;
+    display: inline-block;
     opacity: auto;
     cursor: pointer;
     overflow: hidden; }
+    @media screen and (max-width: 1040px) {
+      nav.boxes ul li, nav.boxes-items ul li {
+        width: 33.33%; } }
+    @media screen and (max-width: 920px) {
+      nav.boxes ul li, nav.boxes-items ul li {
+        width: 50%; } }
+    @media screen and (max-width: 660px) {
+      nav.boxes ul li, nav.boxes-items ul li {
+        width: 100%; } }
+    nav.boxes ul li:after, nav.boxes-items ul li:after {
+      display: block;
+      content: ' ';
+      padding-top: 54.68%; }
     nav.boxes ul li:hover div.overlay, nav.boxes-items ul li:hover div.overlay {
       opacity: 0; }
     nav.boxes ul li img, nav.boxes-items ul li img {
       position: absolute;
       top: 0;
+      bottom: 0;
       left: 0;
+      right: 0;
       z-index: 1;
       width: 100%;
       height: 100%; }
@@ -211,8 +235,6 @@ nav.boxes-items {
         opacity: 0;
         transition: 0.3s linear opacity;
         -webkit-transition: 0.3s linear opacity; }
-      nav.boxes-items ul li a {
-        position: relative; }
 
 #media-wrapper {
   width: 67.5%;
@@ -449,11 +471,11 @@ nav.boxes-items ul li:hover a {
   transform: translate3d(0, 0, 0); }
 
 nav.boxes-items ul li a {
-  -webkit-transform: translate3d(0, 165px, 0);
-  -ms-transform: translate3d(0, 165px, 0);
-  -moz-transform: translate3d(0, 165px, 0);
-  -o-transform: translate3d(0, 165px, 0);
-  transform: translate3d(0, 165px, 0);
+  -webkit-transform: translate3d(0, 170px, 0);
+  -ms-transform: translate3d(0, 170px, 0);
+  -moz-transform: translate3d(0, 170px, 0);
+  -o-transform: translate3d(0, 170px, 0);
+  transform: translate3d(0, 170px, 0);
   -webkit-transition: 0.2s ease-out all;
   -ms-transition: 0.2s ease-out all;
   -moz-transition: 0.2s ease-out all;

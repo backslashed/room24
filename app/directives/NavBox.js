@@ -9,8 +9,8 @@ R24.NavBox = ['$interpolate', '$animate', '$location', function($interpolate, $a
     var linkFn = function(scope, elem, attr) {
         var container    = angular.element(elem.children()[1]),
             header       = angular.element(elem.children()[0]).children(),
-            itemTemplate = '<li><img src="{{thumbnail}}" alt="{{title}}" /><a><p>{{title}}<br />{{description}}<br /><span class="faded">{{agency}}</span></p></a><div class="overlay"></div></li>',
-            boxTemplate  = '<li><img src="{{thumbnail}}" alt="{{title}}" /><a><p>{{title}}</p></a><div class="overlay"></div></li>',
+            itemTemplate = '<li><img src="{{thumbnail}}" alt="{{title}}" /><div class="hover-wrapper"><a><p>{{title}}<br />{{description}}<br /><span class="faded">{{agency}}</span></p></a></div><div class="overlay"></div></li>',
+            boxTemplate  = '<li><img src="{{thumbnail}}" alt="{{title}}" /><div class="hover-wrapper"><a><p>{{title}}</p></a></div><div class="overlay"></div></li>',
 
             popOldItems = function(items) {
                 TweenMax.staggerTo(items, 0.3, { opacity: 0, scale: 0.95 }, 0.35 / items.length);
