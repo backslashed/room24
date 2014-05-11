@@ -7,6 +7,11 @@
   z-index: 5;
   background: url(../../assets/285.GIF) center 150px no-repeat rgba(12, 73, 108, 0.05);
   background-size: 32px 32px;
+
+  @media screen and (max-width:720px) {
+    width: 100%;
+    max-width: 720px;
+  }
 }
 
 #item-media {
@@ -38,16 +43,7 @@ section.details {
     color: #fff;
 
     @media screen and (max-width: 720px) {
-      float: left;
       margin-top: 5px;
-
-      &:before {
-        content: '.';
-        visibility: hidden;
-        clear: left;
-        display: block;
-        height: 0;
-      }
     }
 
     &:first-child {

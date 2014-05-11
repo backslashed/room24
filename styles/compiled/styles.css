@@ -155,7 +155,7 @@ nav.boxes ul, nav.boxes-items ul {
     opacity: auto;
     cursor: pointer;
     overflow: hidden; }
-    @media screen and (max-width: 1040px) {
+    @media screen and (max-width: 1055px) {
       nav.boxes ul li, nav.boxes-items ul li {
         width: 33.33%; } }
     @media screen and (max-width: 920px) {
@@ -245,6 +245,10 @@ nav.boxes-items {
   z-index: 5;
   background: url(../../assets/285.GIF) center 150px no-repeat rgba(12, 73, 108, 0.05);
   background-size: 32px 32px; }
+  @media screen and (max-width: 720px) {
+    #media-wrapper {
+      width: 100%;
+      max-width: 720px; } }
 
 #item-media {
   width: 100%;
@@ -276,14 +280,7 @@ section.details {
     color: #fff; }
     @media screen and (max-width: 720px) {
       section.details span.label {
-        float: left;
-        margin-top: 5px; }
-        section.details span.label:before {
-          content: '.';
-          visibility: hidden;
-          clear: left;
-          display: block;
-          height: 0; } }
+        margin-top: 5px; } }
     section.details span.label:first-child {
       margin-top: 0 !important; }
     section.details span.label.spaced {
