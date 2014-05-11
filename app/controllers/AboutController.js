@@ -6,5 +6,7 @@ R24.AboutController = ['$scope', 'DataSource', function($scope, dataSource) {
             $scope.content = data;
         });
 
-    $scope.activeSlide = 0;
+    if($scope.content) {
+        $scope.content.activeSlide = 0;
+    }
 }];
