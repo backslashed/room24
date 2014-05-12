@@ -11,6 +11,11 @@ var app = angular.module('Room24', [
 ]);
 
 app.
+    run(function() {
+        if ( !/(iPad|iPhone|iPod)/g.test( navigator.userAgent ) ) {
+            angular.element(document.getElementsByTagName('body')[0]).addClass('play-free');
+        }
+    }).
     constant('API_URI', 'static/content.live.json').
 
     config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
@@ -41,4 +46,3 @@ app.
     controller('CategoryItemController', R24.CategoryItemController).
 
     directive('navBox', R24.NavBox);
-
