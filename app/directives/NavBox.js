@@ -87,17 +87,7 @@ R24.NavBox = ['$interpolate', '$animate', '$location', '$q', function($interpola
             if(angular.isDefined(newSlide)) {
                 if(angular.isDefined(oldSlide) && oldSlide !== newSlide && oldSlide.items.length > 0) {
                     hideSlideFor(newSlide).then(showSlide);
-
-                    /*
-                    $animate.addClass(header, 'getOut', function() {
-                        pushNewItems(newVal);
-                        header.html(newVal.body);
-                        $animate.removeClass(header, 'getOut');
-                    });
-
-                    popOldItems(container.children());*/
                 } else {
-                    header.html(newSlide.body);
                     showSlide(newSlide);
                 }
             }
