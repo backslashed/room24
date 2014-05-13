@@ -52,12 +52,12 @@ header nav ul li {
 
 nav.boxes {
   section.body h1 {
-    @include vendor-prefix(transform, translate3d(0, 0, 0));
-    @include vendor-prefix(transition, 0.35s linear all);
-    opacity: 1;
+    opacity: 0;
+    @include vendor-prefix(transform, translate3d(-35px, 0, 0));
 
-    .getOut.getOut-add {
+    &.getOut.getOut-add {
       @include vendor-prefix(transform, translate3d(0, 0, 0));
+      @include vendor-prefix(transition, 0.35s linear all);
       opacity: 1;
     }
 
@@ -66,10 +66,17 @@ nav.boxes {
       opacity: 0;
     }
 
-    &.getOut.getOut-remove {
-      @include vendor-prefix(transform, translate3d(-35px, 0, 0));
-      opacity: 0;
+    &.getIn {
+      opacity: 1;
+      @include vendor-prefix(transition, 0.35s linear all);
+      @include vendor-prefix(transform, translate3d(0, 0, 0));
     }
+
+    &.getIn.getIn-add.getIn-add-active {
+      @include vendor-prefix(transform, translate3d(0, 0, 0));
+      opacity: 1;
+    }
+
   }
 
   ul li {
