@@ -271,14 +271,6 @@ nav.boxes-items {
   -moz-transform: scale(0.93);
   -o-transform: scale(0.93);
   transform: scale(0.93); }
-  @media screen and (max-width: 920px) {
-    #item-media {
-      -webkit-transform: none;
-      -ms-transform: none;
-      -moz-transform: none;
-      -o-transform: none;
-      transform: none;
-      opacity: 1; } }
 
 section.details {
   width: 30%;
@@ -421,25 +413,6 @@ header nav ul li a {
   -o-transition: 0.3s ease-out all;
   transition: 0.3s ease-out all; }
 
-body.play-free .getOut.getOut-add {
-  -webkit-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-body.play-free .getOut.getOut-add.getOut-add-active {
-  -webkit-transform: translate3d(35px, 0, 0);
-  -ms-transform: translate3d(35px, 0, 0);
-  -moz-transform: translate3d(35px, 0, 0);
-  -o-transform: translate3d(35px, 0, 0);
-  transform: translate3d(35px, 0, 0); }
-body.play-free .getOut.getOut-remove {
-  -webkit-transform: translate3d(-35px, 0, 0);
-  -ms-transform: translate3d(-35px, 0, 0);
-  -moz-transform: translate3d(-35px, 0, 0);
-  -o-transform: translate3d(-35px, 0, 0);
-  transform: translate3d(-35px, 0, 0); }
-
 nav.boxes section.body h1, nav.boxes-items section.body h1, nav.boxes main section.body-short h1, main nav.boxes section.body-short h1, nav.boxes-items main section.body-short h1, main nav.boxes-items section.body-short h1, nav.boxes section.body main h2, main nav.boxes section.body h2, nav.boxes-items section.body main h2, main nav.boxes-items section.body h2, nav.boxes main section.body-short h2, main nav.boxes section.body-short h2, nav.boxes-items main section.body-short h2, main nav.boxes-items section.body-short h2 {
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -453,10 +426,25 @@ nav.boxes section.body h1, nav.boxes-items section.body h1, nav.boxes main secti
   transition: 0.35s linear all;
   opacity: 1; }
   nav.boxes section.body h1 .getOut.getOut-add, nav.boxes-items section.body h1 .getOut.getOut-add, nav.boxes main section.body-short h1 .getOut.getOut-add, main nav.boxes section.body-short h1 .getOut.getOut-add, nav.boxes-items main section.body-short h1 .getOut.getOut-add, main nav.boxes-items section.body-short h1 .getOut.getOut-add, nav.boxes section.body main h2 .getOut.getOut-add, main nav.boxes section.body h2 .getOut.getOut-add, nav.boxes-items section.body main h2 .getOut.getOut-add, main nav.boxes-items section.body h2 .getOut.getOut-add, nav.boxes main section.body-short h2 .getOut.getOut-add, main nav.boxes section.body-short h2 .getOut.getOut-add, nav.boxes-items main section.body-short h2 .getOut.getOut-add, main nav.boxes-items section.body-short h2 .getOut.getOut-add {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     opacity: 1; }
   nav.boxes section.body h1.getOut.getOut-add.getOut-add-active, nav.boxes-items section.body h1.getOut.getOut-add.getOut-add-active, nav.boxes main section.body-short h1.getOut.getOut-add.getOut-add-active, main nav.boxes section.body-short h1.getOut.getOut-add.getOut-add-active, nav.boxes-items main section.body-short h1.getOut.getOut-add.getOut-add-active, main nav.boxes-items section.body-short h1.getOut.getOut-add.getOut-add-active, nav.boxes section.body main h2.getOut.getOut-add.getOut-add-active, main nav.boxes section.body h2.getOut.getOut-add.getOut-add-active, nav.boxes-items section.body main h2.getOut.getOut-add.getOut-add-active, main nav.boxes-items section.body h2.getOut.getOut-add.getOut-add-active, nav.boxes main section.body-short h2.getOut.getOut-add.getOut-add-active, main nav.boxes section.body-short h2.getOut.getOut-add.getOut-add-active, nav.boxes-items main section.body-short h2.getOut.getOut-add.getOut-add-active, main nav.boxes-items section.body-short h2.getOut.getOut-add.getOut-add-active {
+    -webkit-transform: translate3d(35px, 0, 0);
+    -ms-transform: translate3d(35px, 0, 0);
+    -moz-transform: translate3d(35px, 0, 0);
+    -o-transform: translate3d(35px, 0, 0);
+    transform: translate3d(35px, 0, 0);
     opacity: 0; }
   nav.boxes section.body h1.getOut.getOut-remove, nav.boxes-items section.body h1.getOut.getOut-remove, nav.boxes main section.body-short h1.getOut.getOut-remove, main nav.boxes section.body-short h1.getOut.getOut-remove, nav.boxes-items main section.body-short h1.getOut.getOut-remove, main nav.boxes-items section.body-short h1.getOut.getOut-remove, nav.boxes section.body main h2.getOut.getOut-remove, main nav.boxes section.body h2.getOut.getOut-remove, nav.boxes-items section.body main h2.getOut.getOut-remove, main nav.boxes-items section.body h2.getOut.getOut-remove, nav.boxes main section.body-short h2.getOut.getOut-remove, main nav.boxes section.body-short h2.getOut.getOut-remove, nav.boxes-items main section.body-short h2.getOut.getOut-remove, main nav.boxes-items section.body-short h2.getOut.getOut-remove {
+    -webkit-transform: translate3d(-35px, 0, 0);
+    -ms-transform: translate3d(-35px, 0, 0);
+    -moz-transform: translate3d(-35px, 0, 0);
+    -o-transform: translate3d(-35px, 0, 0);
+    transform: translate3d(-35px, 0, 0);
     opacity: 0; }
 nav.boxes ul li, nav.boxes-items ul li {
   -webkit-transform: scale(0.8);

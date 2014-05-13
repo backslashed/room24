@@ -53,8 +53,8 @@ R24.NavBox = ['$interpolate', '$animate', '$location', function($interpolate, $a
             if(angular.isDefined(newVal)) {
                 if(angular.isDefined(oldVal) && oldVal !== newVal && oldVal.items.length > 0) {
                     $animate.addClass(header, 'getOut', function() {
-                        header.html(newVal.body);
                         pushNewItems(newVal);
+                        header.html(newVal.body);
                         $animate.removeClass(header, 'getOut');
                     });
 

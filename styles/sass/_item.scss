@@ -29,11 +29,6 @@
   opacity: 0;
   z-index: 15;
   @include vendor-prefix(transform, scale(0.93));
-
-  @media screen and (max-width: 920px) {
-    @include vendor-prefix(transform, none);
-    opacity: 1;
-  }
 }
 
 section.details {

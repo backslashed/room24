@@ -34,6 +34,11 @@ R24.CategoryItemController = ['$scope', '$stateParams', 'DataSource', '$sce', '$
         post('addEventListener', 'play');
         post('addEventListener', 'pause');
         // + ready
+
+        if ( !(document.getElementsByTagName('body')[0].className == 'play-free') ) {
+            TweenMax.to(mediaFrame, 0.3, { opacity: 1, scale: 1 });
+        }
+
         post('play', '');
     });
 
