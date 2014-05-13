@@ -20,7 +20,7 @@ R24.NavBox = ['$interpolate', '$animate', '$location', '$q', function($interpola
             itemTemplate = '<li><img src="{{thumbnail}}" alt="{{title}}" /><div class="hover-wrapper"><a href="#"><p>{{title}}<br />{{description}}<br /><span class="faded">{{agency}}</span></p></a></div><div class="overlay"></div></li>',
             boxTemplate  = '<li><img src="{{thumbnail}}" alt="{{title}}" /><div class="hover-wrapper"><a href="#"><p>{{title}}</p></a></div><div class="overlay"></div></li>',
 
-            hideSlideFor = function(newSlide) {
+            hideSlideFor = function(newSlide, oldSlide) {
                 var all_     = $q.defer(),
                     header_  = $q.defer(),
                     boxes_  = $q.defer();
@@ -32,10 +32,8 @@ R24.NavBox = ['$interpolate', '$animate', '$location', '$q', function($interpola
                     });
                 });
 
-                TweenMax.staggerTo(container.children(), 0.3, { opacity: 0, scale: 0.95 },
-                        newSlide.items.length > 12 ? 0.025 : 0.3 / newSlide.items.length, function() {
-                            boxes_.resolve();
-                        });
+                TweenMax.staggerTo(container.children(), 0.3, { opacity: 0, scale: 0.95 }, 0.3 / oldSlide.items.length,
+                    function() { boxes_.resolve(); });
 
                 $q.all([ header_.promise, boxes_.promise ]).
                     then(function() {
@@ -67,12 +65,9 @@ R24.NavBox = ['$interpolate', '$animate', '$location', '$q', function($interpola
                             scope.activeSlide = key + 1;
                             scope.$apply();
                         } else {
-                            $animate.addClass(header, 'getOut', function () {
+                            hideSlideFor(void 0, newItems).then(function() {
                                 $location.path('/category/' + newItems.category_id + '/' + item.id);
-                                scope.$apply();
                             });
-
-                            popOldItems(container.children());
                             event.preventDefault();
                         }
                     });
@@ -80,13 +75,13 @@ R24.NavBox = ['$interpolate', '$animate', '$location', '$q', function($interpola
                     container.append(el);
                 });
 
-                TweenMax.staggerTo(container.children(), 0.35, { opacity: 1, scale: 1 }, 0.05);
+                TweenMax.staggerTo(container.children(), 0.35, { opacity: 1, scale: 1 }, 0.04);
             };
 
         scope.$watch('ngModel', function(newSlide, oldSlide) {
             if(angular.isDefined(newSlide)) {
                 if(angular.isDefined(oldSlide) && oldSlide !== newSlide && oldSlide.items.length > 0) {
-                    hideSlideFor(newSlide).then(showSlide);
+                    hideSlideFor(newSlide, oldSlide).then(showSlide);
                 } else {
                     showSlide(newSlide);
                 }
