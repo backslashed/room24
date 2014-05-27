@@ -1,8 +1,8 @@
 <section class="contact" ng-class="{ active: contactVisible }">
     <div class="aligner">
-        <span class="phone"><span class="label">Phone </span>{{content.slides[0].contact.phone}}</span>
-        <span class="email"><span class="label">E-mail </span>{{content.slides[0].contact.email}}</span>
-        <span class="map_link"><a target="_blank" ng-href="{{content.slides[0].contact.map_link}}">MAP</a></span>
+        <span class="phone first"><a ng-href="tel:{{content.slides[0].contact.phone}}">Phone<span class="mobile-hide">: {{content.slides[0].contact.phone}}</span></a></span>
+        <span class="email"><a ng-href="mailto:{{content.slides[0].contact.email}}">Email<span class="mobile-hide">: {{content.slides[0].contact.email}}</span></a></span>
+        <span class="map_link"><a target="_blank" ng-href="{{content.slides[0].contact.map_link}}">Location<span class="mobile-hide">: View</span></a></span>
     </div>
 </section>
 

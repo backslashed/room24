@@ -25,7 +25,6 @@ R24.NavBox = ['$interpolate', '$animate', '$location', '$q', function($interpola
                     header_  = $q.defer(),
                     boxes_  = $q.defer();
 
-
                 $animate.addClass(header, 'getOut', function() {
                     $animate.removeClass(header, 'getIn', function() {
                         header_.resolve();
@@ -33,7 +32,9 @@ R24.NavBox = ['$interpolate', '$animate', '$location', '$q', function($interpola
                 });
 
                 TweenMax.staggerTo(container.children(), 0.3, { opacity: 0, scale: 0.95 }, 0.3 / oldSlide.items.length,
-                    function() { boxes_.resolve(); });
+                    function() {
+                        boxes_.resolve();
+                    });
 
                 $q.all([ header_.promise, boxes_.promise ]).
                     then(function() {

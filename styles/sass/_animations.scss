@@ -14,24 +14,47 @@
 
 section.contact {
   @include vendor-prefix(transition, 0.3s ease-out height);
-  font: $font-regular;
-  color: #FFF;
+  font: $font-thin;
+  font-size: 18px;
+  color: $text-header-color;
   overflow: hidden;
   background: #000;
   width: 100%;
   height: 0;
   display: block;
 
-  .label {
-    text-transform: uppercase;
+  @media screen and (max-width:720px) {
+    .mobile-hide {
+      display: none;
+    }
   }
 
   .aligner {
-    padding-top: 30px;
+    .first {
+      margin-left: 0px;
+    }
+
+    > span {
+      margin-left: 60px;
+
+      @media screen and (max-width: 720px) {
+        width: 32%;
+        display: inline-block;
+        text-align: center;
+        margin-left: 0px;
+      }
+    }
+
+    padding-top: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $text-header-color;
   }
 
   &.active {
-    height: 78px;
+    height: 68px;
   }
 }
 
@@ -84,7 +107,7 @@ nav.boxes {
     opacity: 0;
 
     div.overlay {
-      @include vendor-prefix(transition, 0.28s ease-in opacity);
+      @include vendor-prefix(transition, 0.28s ease-in all);
     }
 
     &.ng-enter {
