@@ -187,9 +187,10 @@ nav.boxes ul, nav.boxes-items ul {
       display: block;
       content: ' ';
       padding-top: 54.68%; }
-    nav.boxes ul li:hover div.overlay, nav.boxes-items ul li:hover div.overlay {
-      opacity: 0.7;
-      background-color: #33ccff; }
+    @media screen and (min-width: 580px) {
+      nav.boxes ul li:hover div.overlay, nav.boxes-items ul li:hover div.overlay {
+        opacity: 0.7;
+        background-color: #33ccff; } }
     nav.boxes ul li img, nav.boxes-items ul li img {
       position: absolute;
       top: 0;
@@ -255,6 +256,30 @@ nav.boxes-items {
         opacity: 0;
         transition: 0.3s linear opacity;
         -webkit-transition: 0.3s linear opacity; }
+      nav.boxes-items ul li a span.sep {
+        display: none; }
+      @media screen and (max-width: 580px) {
+        nav.boxes-items ul li a {
+          -webkit-transform: none !important;
+          -ms-transform: none !important;
+          -moz-transform: none !important;
+          -o-transform: none !important;
+          transform: none !important; }
+          nav.boxes-items ul li a p {
+            display: block;
+            width: 100%;
+            padding: 6px 0 6px 8px;
+            overflow: hidden;
+            text-align: left;
+            background: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            bottom: -1px;
+            margin: 0;
+            line-height: 18px; }
+          nav.boxes-items ul li a span.sep {
+            display: inline; }
+          nav.boxes-items ul li a br, nav.boxes-items ul li a .faded {
+            display: none; } }
 
 #media-wrapper {
   width: 67.5%;
@@ -536,12 +561,13 @@ nav.boxes ul li, nav.boxes-items ul li {
     -o-transform: scale(1);
     transform: scale(1); }
 
-nav.boxes-items ul li:hover a {
-  -webkit-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
+@media screen and (min-width: 580px) {
+  nav.boxes-items ul li:hover a {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
 
 nav.boxes-items ul li a {
   -webkit-transform: translate3d(0, 170px, 0);

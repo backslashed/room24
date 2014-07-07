@@ -17,7 +17,7 @@ R24.NavBox = ['$interpolate', '$animate', '$location', '$q', function($interpola
    function constructor(scope, elem) {
         var container    = angular.element(elem.children()[1]),
             header       = angular.element(elem.children()[0]).children(),
-            itemTemplate = '<li><img src="{{thumbnail}}" alt="{{title}}" /><div class="hover-wrapper"><a href="#"><p>{{title}}<br />{{description}}<br /><span class="faded">{{agency}}</span></p></a></div><div class="overlay"></div></li>',
+            itemTemplate = '<li><img src="{{thumbnail}}" alt="{{title}}" /><div class="hover-wrapper"><a href="#"><p>{{title}}<br /><span class="sep"> - </span>{{description}}<br /><span class="faded">{{agency}}</span></p></a></div><div class="overlay"></div></li>',
             boxTemplate  = '<li><img src="{{thumbnail}}" alt="{{title}}" /><div class="hover-wrapper"><a href="#"><p>{{title}}</p></a></div><div class="overlay"></div></li>',
 
             hideSlideFor = function(newSlide, oldSlide) {
@@ -26,20 +26,14 @@ R24.NavBox = ['$interpolate', '$animate', '$location', '$q', function($interpola
                     boxes_  = $q.defer();
 
                 $animate.addClass(header, 'getOut', function() {
-                    $animate.removeClass(header, 'getIn', function() {
-                        header_.resolve();
-                    });
+                    $animate.removeClass(header, 'getIn', function() { header_.resolve(); });
                 });
 
                 TweenMax.staggerTo(container.children(), 0.3, { opacity: 0, scale: 0.95 }, 0.3 / oldSlide.items.length,
-                    function() {
-                        boxes_.resolve();
-                    });
+                    function() { boxes_.resolve(); });
 
                 $q.all([ header_.promise, boxes_.promise ]).
-                    then(function() {
-                        all_.resolve(newSlide);
-                    });
+                    then(function() { all_.resolve(newSlide); });
 
                 return all_.promise;
             },
