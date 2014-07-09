@@ -38,6 +38,7 @@ section.details {
   color: $text-header-color;
   line-height: 18px;
   margin: 0 0 0 2.5%;
+  position: relative;
 
   @media screen and (max-width: 720px) {
     clear: left;
@@ -54,6 +55,8 @@ section.details {
 
     @media screen and (max-width: 720px) {
       margin-top: 5px;
+      float: left;
+      width: 80px;
     }
 
     &:first-child {
@@ -62,6 +65,16 @@ section.details {
 
     &.spaced {
       margin: 40px 0 10px;
+      @media screen and (max-width: 720px) {
+        display: none;
+      }
+    }
+  }
+
+
+  @media screen and (max-width: 720px) {
+    .share-tools {
+      margin: 20px 0 0 -5px;
     }
   }
 

@@ -142,7 +142,7 @@ nav.boxes-items {
           p {
             display: block;
             width: 100%;
-            padding: 6px 0 6px 8px;
+            padding: 4px 0 4px 6px;
             overflow: hidden;
             text-align: left;
             background: rgba(0, 0, 0, 0.4);
@@ -150,6 +150,7 @@ nav.boxes-items {
             bottom: -1px;
             margin: 0;
             line-height: 18px;
+            font-size: 12px;
           }
 
           span.sep {

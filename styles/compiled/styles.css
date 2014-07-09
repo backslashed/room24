@@ -268,14 +268,15 @@ nav.boxes-items {
           nav.boxes-items ul li a p {
             display: block;
             width: 100%;
-            padding: 6px 0 6px 8px;
+            padding: 4px 0 4px 6px;
             overflow: hidden;
             text-align: left;
             background: rgba(0, 0, 0, 0.4);
             position: absolute;
             bottom: -1px;
             margin: 0;
-            line-height: 18px; }
+            line-height: 18px;
+            font-size: 12px; }
           nav.boxes-items ul li a span.sep {
             display: inline; }
           nav.boxes-items ul li a br, nav.boxes-items ul li a .faded {
@@ -322,7 +323,8 @@ section.details {
   float: left;
   color: #33ccff;
   line-height: 18px;
-  margin: 0 0 0 2.5%; }
+  margin: 0 0 0 2.5%;
+  position: relative; }
   @media screen and (max-width: 720px) {
     section.details {
       clear: left;
@@ -336,11 +338,19 @@ section.details {
     color: #fff; }
     @media screen and (max-width: 720px) {
       section.details span.label {
-        margin-top: 5px; } }
+        margin-top: 5px;
+        float: left;
+        width: 80px; } }
     section.details span.label:first-child {
       margin-top: 0 !important; }
     section.details span.label.spaced {
       margin: 40px 0 10px; }
+      @media screen and (max-width: 720px) {
+        section.details span.label.spaced {
+          display: none; } }
+  @media screen and (max-width: 720px) {
+    section.details .share-tools {
+      margin: 20px 0 0 -5px; } }
   section.details a {
     height: 22px;
     width: 34px;
