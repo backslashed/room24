@@ -1,441 +1,424 @@
-{
-    "pages":{
-        "about":{
-            "title":"About Us",
-            "body":"<p>Room 24 is an award winning specialist music and sound design studio located in North London.<\/p>\r\n<p>Formed by Simon Little and Ross Wakefield, who between them have 25 years of experience writing and producing music. Their careers have taken them around the world for recording sessions, touring with live bands and DJing.<\/p>\r\n<p>Room 24 has a stellar line up of session musicians at our disposal, with our own recording studios for live sessions. From creating minimal electronic scores, cinematic soundscapes and writing songs - we pride ourselves in creating high-end music for brands, advertising and events. Rooms 24 are accomplished Sound Designers and Studio Engineers, with a recent D&D award nomination.<\/p>\r\n\r\n<h2>Ross Room24<\/h2>\r\n<p>Ross\u2019s musical career includes a string of international releases. He co-founded the band \u2018Part-Time Heroes\u2019 releasing two albums which led to Maida Vale sessions for BBC Radio 1 and nominations for Gilles Peterson\u2019s Worldwide Awards.<\/p>\r\n<p>His ventures into the world of TV and sync composition have been equally prolific. Over the last five years Ross has provided musical ballast for major brands such as MTV, B&Q, Friends Reunited, Rimmel London, Schwarzkopf, BT and Google Chrome. He also has several documentary scores and music library projects under his belt.<\/p>\r\n\r\n<h2>Simon Room 24.<\/h2>\r\n<p>Simon started his musical career playing the family piano from the age of 5. He started playing in bands as soon as he was allowed out, and by the time he was 21 he\u2019d discovered a love for vintage keyboards, including his beloved Rhodes electric piano and Hammond organ. He later found he had an equal love of analogue synths, but that\u2019s another story.<\/p>\r\n<p>Simon has toured the world with Bonobo and Quantic, perfecting the art of musicianship and sleep deprivation. He has also mixed numerous live performances for TV working with bands such as Kasabian, Adele, Florence And The Machine, Robyn and Bombay Bicycle Club. He a master at writing to picture, and has created bespoke music for Virgin Atlantic, Vodafone and Tate Gallery.<\/p>\r\n\r\n<h2>Rebecca Grierson<\/h2>\r\n<p>Executive Producer, Room 24<\/p>\r\n<p>Rebecca began her career in music Radio, working as a Producer for the BBC, producing shows with Gilles Peterson, Mary Anne Hobbs, In New DJ\u2019s We Trust and Huw Stephens. During this time she also produced numerous Maida Vale sessions and music documentaries in New York, Japan and Europe. Rebecca has worked as a Senior Music Consultant helping to create musical identities for retail and travel brands including Mulberry, The Hilton and Espa. She began working as a Music Supervisor in 2011, placing music on adverts and composing music for brands including Honda, Rimmel, Weetabix, Johnnie Walker and Spotify.<\/p>"
-        },
-        "home":{
-            "title":"Home",
-            "body":"We are an independent music production studio, producing original composition and sound design."
-        },
-        "contact":{
-            "phone":"1234567890",
-            "email":"someone@somewhere.com",
-            "map_link":"https:\/\/www.google.co.uk\/maps\/place\/London\/@51.5286416,-0.1015987,10z\/data=!3m1!4b1!4m2!3m1!1s0x47d8a00baf21de75:0x52963a5addd52a99"
-        }
-    },
-    "categories":[
-        {
-            "id":25,
-            "title":"Sound Experience",
-            "body":"about making sounds that tell a story.",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/Screen-shot-2014-04-21-at-00.20.14.png"
-        },
-        {
-            "id":24,
-            "title":"Live Sessions",
-            "body":"We are passionate about making sounds that tell a story.",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/451801204_640.jpg"
-        },
-        {
-            "id":23,
-            "title":"Sound Design",
-            "body":"are passionate about making sounds that tell a story.",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472204234_640.jpg"
-        },
-        {
-            "id":21,
-            "title":"Original Composition",
-            "body":"HDSAKLHSDKJ We are passionate about making sounds that tell a story.",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472138404_640.jpg"
-        }
-    ],
-    "items":[
-        {
-            "id":95,
-            "category_id":[
-                21,
-                23
-            ],
-            "media_url":"60315139",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/451792322_640.jpg",
-            "title":"Channel 4 Playlist",
-            "client":"",
-            "director":"",
-            "agency":"Box TV",
-            "body":"A mixture of our own style of music and sound design was required to go with this great playful series of animated sketches.",
-            "description":"Channel 4 Playlist"
-        },
-        {
-            "id":93,
-            "category_id":[
-                24
-            ],
-            "media_url":"76831396",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/451801204_640.jpg",
-            "title":"Brazilian Recording Session Part 02",
-            "client":"",
-            "director":"Thom Undrell",
-            "agency":"Imagem",
-            "body":"This was a great day in the studio. Culminating in a wealth of authentic and remixed Samba tracks.",
-            "description":"Brazilian Recording Session Part 02"
-        },
-        {
-            "id":91,
-            "category_id":[
-                24
-            ],
-            "media_url":"76874617",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/451858569_640.jpg",
-            "title":"Brazilian Recording Session Part 01",
-            "client":"",
-            "director":"Thom Undrell",
-            "agency":"Imagem",
-            "body":"A wonderful opportunity to record some incredible Brazilian musicians.",
-            "description":"Brazilian Recording Session Part 01"
-        },
-        {
-            "id":89,
-            "category_id":[
-                23
-            ],
-            "media_url":"92417253",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472141906_640.jpg",
-            "title":"G.E.",
-            "client":"",
-            "director":"",
-            "agency":"",
-            "body":"",
-            "description":"G.E."
-        },
-        {
-            "id":87,
-            "category_id":[
-                21,
-                23
-            ],
-            "media_url":"92417387",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472141730_640.jpg",
-            "title":"Handy App",
-            "client":"",
-            "director":"",
-            "agency":"",
-            "body":"",
-            "description":"Handy App"
-        },
-        {
-            "id":85,
-            "category_id":[
-                21
-            ],
-            "media_url":"92417928",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472141627_640.jpg",
-            "title":"Littlewoods",
-            "client":"",
-            "director":"Charlie Battrick",
-            "agency":"Carat Sponsorship",
-            "body":"A seasonal musical composition, aired across the major terrestrial channels.",
-            "description":"Littlewoods"
-        },
-        {
-            "id":83,
-            "category_id":[
-                21
-            ],
-            "media_url":"92417929",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472141523_640.jpg",
-            "title":"Microsoft",
-            "client":"",
-            "director":"Adam Randall",
-            "agency":"FMG",
-            "body":"The worlds biggest software company asked\u00a0us to pen a series of six soundtracks to accompany a collection of short films for the launch of their Microsoft Ace Campaign.",
-            "description":"Microsoft"
-        },
-        {
-            "id":81,
-            "category_id":[
-                21,
-                23
-            ],
-            "media_url":"92417930",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472141448_640.jpg",
-            "title":"Sir David Attenborough",
-            "client":"",
-            "director":"",
-            "agency":"Arnold &amp; Pearl",
-            "body":"David Attenborough and The Natural History Museum recently collaborated to release an app. We were lucky enough to produce all of the music and sound design.",
-            "description":"Sir David Attenborough"
-        },
-        {
-            "id":79,
-            "category_id":[
-                21
-            ],
-            "media_url":"92418026",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472138404_640.jpg",
-            "title":"Schwarzkopf",
-            "client":"",
-            "director":"Ben Collier-Marsh",
-            "agency":"Addiction Content",
-            "body":"Lots of energy, pace and fun wrapped up in what\u2019s proven to be a hugely successful sync direction for us.",
-            "description":"Schwarzkopf"
-        },
-        {
-            "id":77,
-            "category_id":[
-                23
-            ],
-            "media_url":"92418027",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472138448_640.jpg",
-            "title":"Redbull",
-            "client":"",
-            "director":"",
-            "agency":"",
-            "body":"",
-            "description":"Redbull"
-        },
-        {
-            "id":75,
-            "category_id":[
-                21
-            ],
-            "media_url":"92418029",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472138449_640.jpg",
-            "title":"Quidco",
-            "client":"",
-            "director":"Ben Collier-Marsh",
-            "agency":"Addiction Content",
-            "body":"A light-hearted, friendly and energetic soundtrack to accompany an extremely positive animation.",
-            "description":"Quidco"
-        },
-        {
-            "id":73,
-            "category_id":[
-                24
-            ],
-            "media_url":"92418085",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472204298_640.jpg",
-            "title":"Quantic & Alice Russell direct to disk a-side",
-            "client":"",
-            "director":"B Plus",
-            "agency":"Quantic Music",
-            "body":"Nothing digital touched the recording of this vinyl 7&quot; record. ",
-            "description":"Quantic &amp; Alice Russell direct to disk a-side"
-        },
-        {
-            "id":71,
-            "category_id":[
-                21
-            ],
-            "media_url":"92418090",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472141196_640.jpg",
-            "title":"Virgin Atlantic",
-            "client":"",
-            "director":"",
-            "agency":"Territory",
-            "body":"Our original music track for Virgin Atlantic can be heard on every single transatlantic flight.",
-            "description":"Virgin Atlantic"
-        },
-        {
-            "id":69,
-            "category_id":[
-                21
-            ],
-            "media_url":"92418091",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472141163_640.jpg",
-            "title":"Tate Shots",
-            "client":"",
-            "director":"",
-            "agency":"Tate Galleries",
-            "body":"This original piece of music is one of many Tate Shots that we have scored.",
-            "description":"Tate Shots"
-        },
-        {
-            "id":67,
-            "category_id":[
-                21,
-                23
-            ],
-            "media_url":"92418092",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472141066_640.jpg",
-            "title":"Suspended Coffee",
-            "client":"",
-            "director":"",
-            "agency":"Mummu",
-            "body":"We created a musical theme and sound design to help these characters come alive.",
-            "description":"Suspended Coffee"
-        },
-        {
-            "id":65,
-            "category_id":[
-                21
-            ],
-            "media_url":"92418113",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472140885_640.jpg",
-            "title":"Rimmel London",
-            "client":"",
-            "director":"Ben Collier-Marsh",
-            "agency":"Addiction Content",
-            "body":"It\u2019s all about \u2018attitude\u2019 and edge this one. Electro-charged, Rock \u2018n Roll to support one of UK fashions biggest exports, none other than Kate Moss.",
-            "description":"Rimmel London"
-        },
-        {
-            "id":63,
-            "category_id":[
-                25
-            ],
-            "media_url":"92418164",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472140438_640.jpg",
-            "title":"Tate Modern Interactive Sound Workshop",
-            "client":"",
-            "director":"Jonah Maddox",
-            "agency":"Tate Galleries",
-            "body":"A sound workshop exploring the use of visual audio interfaces and the work of Yayoi Kusama",
-            "description":"Tate Modern Interactive Sound Workshop"
-        },
-        {
-            "id":61,
-            "category_id":[
-                21
-            ],
-            "media_url":"92418192",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472140391_640.jpg",
-            "title":"T.K.Maxx",
-            "client":"",
-            "director":"",
-            "agency":"",
-            "body":"",
-            "description":"T.K.Maxx"
-        },
-        {
-            "id":59,
-            "category_id":[
-                23
-            ],
-            "media_url":"92418214",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472140328_640.jpg",
-            "title":"Columns",
-            "client":"",
-            "director":"",
-            "agency":"Territory",
-            "body":"This moving logo required an explosion of sound to match the exciting animation.",
-            "description":"Columns"
-        },
-        {
-            "id":57,
-            "category_id":[
-                21
-            ],
-            "media_url":"92418302",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472138761_640.jpg",
-            "title":"Shell",
-            "client":"",
-            "director":"",
-            "agency":"Territory",
-            "body":"Our original music was made to give a positive look to the future.",
-            "description":"Shell"
-        },
-        {
-            "id":54,
-            "category_id":[
-                23
-            ],
-            "media_url":"92418346",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472140123_640.jpg",
-            "title":"BBC Knowledge",
-            "client":"",
-            "director":"Will Samuel",
-            "agency":"Territory",
-            "body":"This wonderful award winning piece called for an abstract musical movement and some futuristic sound design.",
-            "description":"BBC Knowledge"
-        },
-        {
-            "id":52,
-            "category_id":[
-                23
-            ],
-            "media_url":"92420952",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472142149_640.jpg",
-            "title":"Internet Advertising Bureau",
-            "client":"",
-            "director":"Will Samuel",
-            "agency":"",
-            "body":"",
-            "description":"Internet Advertising Bureau"
-        },
-        {
-            "id":50,
-            "category_id":[
-                24
-            ],
-            "media_url":"92470371",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472204234_640.jpg",
-            "title":"Quantic & Alice Russell direct to disk b-side",
-            "client":"",
-            "director":"B Plus",
-            "agency":"Quantic Music",
-            "body":"We engineered this musical project, a recording direct to vinyl. ",
-            "description":"Quantic &amp; Alice Russell direct to disk b-side"
-        },
-        {
-            "id":48,
-            "category_id":[
-                21
-            ],
-            "media_url":"92656659",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472442372_640.jpg",
-            "title":"eHarmony TVC",
-            "client":"",
-            "director":"",
-            "agency":"Kream London",
-            "body":"We created a brand new track featuring a vocal harmony and top-line from the wonderful singer Stac.",
-            "description":"eHarmony TVC"
-        },
-        {
-            "id":46,
-            "category_id":[
-                25
-            ],
-            "media_url":"92660717",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472443166_640.jpg",
-            "title":"Louis Vuitton Power Of The Voice",
-            "client":"",
-            "director":"Jonah Maddox",
-            "agency":"Tonic Mobility",
-            "body":"We were asked to develop a sound piece that explored the power of the human voice. This was incorporated into an interactive event for the staff at Louis Vuitton.",
-            "description":"Louis Vuitton Power Of The Voice"
-        },
-        {
-            "id":44,
-            "category_id":[
-                25
-            ],
-            "media_url":"92661404",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/472443466_640.jpg",
-            "title":"Tate Britain Sound Installation",
-            "client":"",
-            "director":"",
-            "agency":"Tate Galleries",
-            "body":"A sound installation exploring the Migration Of Sound, using a custom made 8 channel surround sound sculpture.",
-            "description":"Tate Britain Sound Installation"
-        },
-        {
-            "id":42,
-            "category_id":[
-                21
-            ],
-            "media_url":"92708309",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/473030310_640.jpg",
-            "title":"EE",
-            "client":"",
-            "director":"",
-            "agency":"Territory",
-            "body":"",
-            "description":"EE"
-        },
-        {
-            "id":40,
-            "category_id":[
-                21
-            ],
-            "media_url":"92708318",
-            "thumbnail":"http:\/\/room24.code-digital.com\/api\/wp-content\/uploads\/473030046_640.jpg",
-            "title":"LORD'S TV, THE HOME OF CRICKET",
-            "client":"",
-            "director":"",
-            "agency":"",
-            "body":"",
-            "description":"LORD&#039;S TV, THE HOME OF CRICKET"
-        }
-    ]
-}
+{"pages": {
+	"about": {
+		"title": "About Us",
+		"body": "<p>Room24 is an award winning specialist music and sound design studio located in North London.<\/p>\r\n<p>Formed by Simon Little and Ross Wakefield, who between them have 25 years of experience writing and producing music. Their careers have taken them around the world for recording sessions, touring with live bands and DJing.<\/p>\r\n<p>Room 24 has a stellar line up of session musicians at our disposal, with our own recording studios for live sessions. From creating minimal electronic scores, cinematic soundscapes and writing songs - we pride ourselves in creating high-end music for brands, advertising and events. Rooms 24 are accomplished Sound Designers and Studio Engineers, with a recent D&D award nomination.<\/p>\r\n\r\n<h2>Ross Room24<\/h2>\r\n<p>Ross\u2019s musical career includes a string of international releases. He co-founded the band \u2018Part-Time Heroes\u2019 releasing two albums which led to Maida Vale sessions for BBC Radio 1 and nominations for Gilles Peterson\u2019s Worldwide Awards.<\/p>\r\n<p>His ventures into the world of TV and sync composition have been equally prolific. Over the last five years Ross has provided musical ballast for major brands such as MTV, B&Q, Friends Reunited, Rimmel London, Schwarzkopf, BT and Google Chrome. He also has several documentary scores and music library projects under his belt.<\/p>\r\n\r\n<h2>Simon Room24<\/h2>\r\n<p>Simon started his musical career playing the family piano from the age of 5. He started playing in bands as soon as he was allowed out, and by the time he was 21 he\u2019d discovered a love for vintage keyboards, including his beloved Rhodes electric piano and Hammond organ. He later found he had an equal love of analogue synths, but that\u2019s another story.<\/p>\r\n<p>Simon has toured the world with Bonobo and Quantic, perfecting the art of musicianship and sleep deprivation. He has also mixed numerous live performances for TV working with bands such as Kasabian, Adele, Florence And The Machine, Robyn and Bombay Bicycle Club. He a master at writing to picture, and has created bespoke music for Virgin Atlantic, Vodafone and Tate Gallery.<\/p>\r\n\r\n<h2>Rebecca Room24<\/h2>\r\n<p>Executive Producer, Room24<\/p>\r\n<p>Rebecca began her career in music Radio, working as a Producer for the BBC, producing shows with Gilles Peterson, Mary Anne Hobbs, In New DJ\u2019s We Trust and Huw Stephens. During this time she also produced numerous Maida Vale sessions and music documentaries in New York, Japan and Europe. Rebecca has worked as a Senior Music Consultant helping to create musical identities for retail and travel brands including Mulberry, The Hilton and Espa. She began working as a Music Supervisor in 2011, placing music on adverts and composing music for brands including Honda, Rimmel, Weetabix, Johnnie Walker and Spotify.<\/p>"
+	},
+	"home": {
+		"title": "Home",
+		"body": "We are an independent music production studio, producing original composition and sound design."
+	},
+	"contact": {
+		"phone": "+44 (0) 207 254 7645",
+		"email": "info@room-24.com",
+		"map_link": "https:\/\/www.google.co.uk\/maps\/place\/117-119+Stoke+Newington+High+St\/@51.5603422,-0.074118,17z\/data=!3m1!4b1!4m2!3m1!1s0x48761c611acb18f3:0xdae3f3284cc601b6"
+	}
+}, "categories": [
+	{
+		"id": 21,
+		"title": "Original Composition",
+		"body": "We compose original material for brand and advertising",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472442372_640.jpg"
+	},
+	{
+		"id": 23,
+		"title": "Sound Design",
+		"body": "We are passionate about making sounds that tell a story.",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472140123_640.jpg"
+	},
+	{
+		"id": 24,
+		"title": "Live Sessions",
+		"body": "We are real musicians, playing real instruments",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/451801204_640.jpg"
+	},
+	{
+		"id": 25,
+		"title": "Sound Experience",
+		"body": "We are always exploring different ways of using and experiencing sound",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472443466_640.jpg"
+	},
+	{
+		"id": 26,
+		"title": "Music Supervision",
+		"body": "We have a creative approach to finding the best music for your project<br \/>\r\n<br \/>\r\n",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472140438_640.jpg"
+	}
+], "items": [
+	{
+		"id": 113,
+		"category_id": [26],
+		"media_url": "",
+		"media_type": "",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/1.jpg",
+		"title": "Story of the Gun: Before the Dawn of the Apes (Year 10)",
+		"client": "20th Century Fox and Vice",
+		"director": "Thirtytwo ",
+		"agency": "Pulse Films",
+		"body": "",
+		"description": "We composed the score for a short film commissioned by 20th Century Fox and Vice. "
+	},
+	{
+		"id": 48,
+		"category_id": [21],
+		"media_url": "92656659",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472442372_640.jpg",
+		"title": "eHarmony TVC",
+		"client": "eHarmony",
+		"director": "",
+		"agency": "Kream London",
+		"body": "We created a brand new track featuring a vocal harmony and top-line from the wonderful singer Stac.",
+		"description": "eHarmony TVC"
+	},
+	{
+		"id": 81,
+		"category_id": [21, 23],
+		"media_url": "92417930",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472141448_640.jpg",
+		"title": "Sir David Attenborough",
+		"client": "Sky TV",
+		"director": "",
+		"agency": "Arnold &amp; Pearl",
+		"body": "David Attenborough and The Natural History Museum recently collaborated to release an app. We were lucky enough to produce all of the music and sound design.",
+		"description": "Sir David Attenborough"
+	},
+	{
+		"id": 85,
+		"category_id": [21],
+		"media_url": "92417928",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472141627_640.jpg",
+		"title": "Littlewoods",
+		"client": "",
+		"director": "Charlie Battrick",
+		"agency": "Carat Sponsorship",
+		"body": "A seasonal musical composition, aired across the major terrestrial channels.",
+		"description": "Littlewoods"
+	},
+	{
+		"id": 42,
+		"category_id": [21],
+		"media_url": "92708309",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/473030310_640.jpg",
+		"title": "EE",
+		"client": "EE",
+		"director": "",
+		"agency": "Territory",
+		"body": "",
+		"description": "EE Brand Film"
+	},
+	{
+		"id": 44,
+		"category_id": [25],
+		"media_url": "92661404",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472443466_640.jpg",
+		"title": "Tate Britain Sound Installation",
+		"client": "",
+		"director": "",
+		"agency": "Tate Galleries",
+		"body": "A sound installation exploring the Migration Of Sound, using a custom made 8 channel surround sound sculpture.",
+		"description": "Tate Britain Sound Installation"
+	},
+	{
+		"id": 46,
+		"category_id": [25],
+		"media_url": "HloPATn9XKk",
+		"media_type": "youtube",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472443166_640.jpg",
+		"title": "Louis Vuitton Power Of The Voice",
+		"client": "",
+		"director": "Jonah Maddox",
+		"agency": "Tonic Mobility",
+		"body": "We were asked to develop a sound piece that explored the power of the human voice. This was incorporated into an interactive event for the staff at Louis Vuitton.",
+		"description": "Louis Vuitton Power Of The Voice"
+	},
+	{
+		"id": 50,
+		"category_id": [24],
+		"media_url": "92470371",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472204234_640.jpg",
+		"title": "Quantic & Alice Russell direct to disk b-side",
+		"client": "",
+		"director": "B Plus",
+		"agency": "Quantic Music",
+		"body": "We engineered this musical project, a recording direct to vinyl. ",
+		"description": "Quantic &amp; Alice Russell direct to disk b-side"
+	},
+	{
+		"id": 52,
+		"category_id": [23],
+		"media_url": "92420952",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472142149_640.jpg",
+		"title": "Internet Advertising Bureau",
+		"client": "",
+		"director": "Will Samuel",
+		"agency": "",
+		"body": "",
+		"description": "Internet Advertising Bureau"
+	},
+	{
+		"id": 54,
+		"category_id": [23],
+		"media_url": "92418346",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472140123_640.jpg",
+		"title": "BBC Knowledge",
+		"client": "BBC",
+		"director": "Will Samuel",
+		"agency": "Territory",
+		"body": "This wonderful award winning piece called for an abstract musical movement and some futuristic sound design.",
+		"description": ""
+	},
+	{
+		"id": 57,
+		"category_id": [21],
+		"media_url": "92418302",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472138761_640.jpg",
+		"title": "Shell",
+		"client": "",
+		"director": "",
+		"agency": "Territory",
+		"body": "Our original music was made to give a positive look to the future.",
+		"description": "Shell"
+	},
+	{
+		"id": 59,
+		"category_id": [23],
+		"media_url": "92418214",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472140328_640.jpg",
+		"title": "Columns",
+		"client": "",
+		"director": "",
+		"agency": "Territory",
+		"body": "This moving logo required an explosion of sound to match the exciting animation.",
+		"description": "Columns"
+	},
+	{
+		"id": 61,
+		"category_id": [21],
+		"media_url": "92418192",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472140391_640.jpg",
+		"title": "T.K.Maxx",
+		"client": "T.K.Maxx",
+		"director": "Anders Hallburg",
+		"agency": "",
+		"body": "",
+		"description": "T.K.Maxx TVC"
+	},
+	{
+		"id": 63,
+		"category_id": [25],
+		"media_url": "92418164",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472140438_640.jpg",
+		"title": "Tate Modern Interactive Sound Workshop",
+		"client": "",
+		"director": "Jonah Maddox",
+		"agency": "Tate Galleries",
+		"body": "A sound workshop exploring the use of visual audio interfaces and the work of Yayoi Kusama",
+		"description": "Tate Modern Interactive Sound Workshop"
+	},
+	{
+		"id": 65,
+		"category_id": [21],
+		"media_url": "92418113",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472140885_640.jpg",
+		"title": "Rimmel London",
+		"client": "",
+		"director": "Ben Collier-Marsh",
+		"agency": "Addiction Content",
+		"body": "It\u2019s all about \u2018attitude\u2019 and edge this one. Electro-charged, Rock \u2018n Roll to support one of UK fashions biggest exports, none other than Kate Moss.",
+		"description": "Rimmel London"
+	},
+	{
+		"id": 67,
+		"category_id": [21, 23],
+		"media_url": "92418092",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472141066_640.jpg",
+		"title": "Suspended Coffee",
+		"client": "",
+		"director": "",
+		"agency": "Mummu",
+		"body": "We created a musical theme and sound design to help these characters come alive.",
+		"description": "Suspended Coffee"
+	},
+	{
+		"id": 69,
+		"category_id": [21],
+		"media_url": "92418091",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472141163_640.jpg",
+		"title": "Tate Shots",
+		"client": "",
+		"director": "",
+		"agency": "Tate Galleries",
+		"body": "This original piece of music is one of many Tate Shots that we have scored.",
+		"description": "Tate Shots"
+	},
+	{
+		"id": 71,
+		"category_id": [21],
+		"media_url": "92418090",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472141196_640.jpg",
+		"title": "Virgin Atlantic",
+		"client": "",
+		"director": "",
+		"agency": "Territory",
+		"body": "Our original music track for Virgin Atlantic can be heard on every single transatlantic flight.",
+		"description": "Virgin Atlantic"
+	},
+	{
+		"id": 73,
+		"category_id": [24],
+		"media_url": "92418085",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472204298_640.jpg",
+		"title": "Quantic & Alice Russell direct to disk a-side",
+		"client": "",
+		"director": "B Plus",
+		"agency": "Quantic Music",
+		"body": "Nothing digital touched the recording of this vinyl 7&quot; record. ",
+		"description": "Quantic &amp; Alice Russell direct to disk a-side"
+	},
+	{
+		"id": 75,
+		"category_id": [21],
+		"media_url": "92418029",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472138449_640.jpg",
+		"title": "Quidco",
+		"client": "",
+		"director": "Ben Collier-Marsh",
+		"agency": "Addiction Content",
+		"body": "A light-hearted, friendly and energetic soundtrack to accompany an extremely positive animation.",
+		"description": "Quidco"
+	},
+	{
+		"id": 77,
+		"category_id": [23],
+		"media_url": "92418027",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472138448_640.jpg",
+		"title": "Redbull",
+		"client": "",
+		"director": "",
+		"agency": "",
+		"body": "",
+		"description": "Redbull"
+	},
+	{
+		"id": 79,
+		"category_id": [21],
+		"media_url": "92418026",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472138404_640.jpg",
+		"title": "Schwarzkopf",
+		"client": "",
+		"director": "Ben Collier-Marsh",
+		"agency": "Addiction Content",
+		"body": "Lots of energy, pace and fun wrapped up in what\u2019s proven to be a hugely successful sync direction for us.",
+		"description": "Schwarzkopf"
+	},
+	{
+		"id": 83,
+		"category_id": [21],
+		"media_url": "92417929",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472141523_640.jpg",
+		"title": "Microsoft",
+		"client": "",
+		"director": "Adam Randall",
+		"agency": "FMG",
+		"body": "The worlds biggest software company asked\u00a0us to pen a series of six soundtracks to accompany a collection of short films for the launch of their Microsoft Ace Campaign.",
+		"description": "Microsoft"
+	},
+	{
+		"id": 87,
+		"category_id": [21, 23],
+		"media_url": "92417387",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472141730_640.jpg",
+		"title": "Handy App",
+		"client": "Flora",
+		"director": "Will Samuel",
+		"agency": "Lean Mean Fighting Machine",
+		"body": "",
+		"description": "Handy App"
+	},
+	{
+		"id": 89,
+		"category_id": [23],
+		"media_url": "92417253",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/472141906_640.jpg",
+		"title": "G.E.",
+		"client": "",
+		"director": "",
+		"agency": "",
+		"body": "",
+		"description": "G.E."
+	},
+	{
+		"id": 91,
+		"category_id": [24],
+		"media_url": "76874617",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/451858569_640.jpg",
+		"title": "Brazilian Recording Session Part 01",
+		"client": "",
+		"director": "Thom Undrell",
+		"agency": "Imagem",
+		"body": "A wonderful opportunity to record some incredible Brazilian musicians.",
+		"description": "Brazilian Recording Session Part 01"
+	},
+	{
+		"id": 93,
+		"category_id": [24],
+		"media_url": "76831396",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/451801204_640.jpg",
+		"title": "Brazilian Recording Session Part 02",
+		"client": "",
+		"director": "Thom Undrell",
+		"agency": "Imagem",
+		"body": "This was a great day in the studio. Culminating in a wealth of authentic and remixed Samba tracks.",
+		"description": "Brazilian Recording Session Part 02"
+	},
+	{
+		"id": 95,
+		"category_id": [21, 23],
+		"media_url": "60315139",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/451792322_640.jpg",
+		"title": "Channel 4 Playlist",
+		"client": "",
+		"director": "",
+		"agency": "Box TV",
+		"body": "A mixture of our own style of music and sound design was required to go with this great playful series of animated sketches.",
+		"description": "Channel 4 Playlist"
+	},
+	{
+		"id": 40,
+		"category_id": [21],
+		"media_url": "92708318",
+		"media_type": "vimeo",
+		"thumbnail": "http:\/\/room-24.com\/api\/wp-content\/uploads\/473030046_640.jpg",
+		"title": "LORD'S TV, THE HOME OF CRICKET",
+		"client": "Lords",
+		"director": "",
+		"agency": "Territory",
+		"body": "",
+		"description": "LORD&#039;S TV, THE HOME OF CRICKET"
+	}
+]}
