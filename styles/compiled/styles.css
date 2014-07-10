@@ -8,7 +8,18 @@ body {
   margin: 0; }
 
 a {
-  color: white; }
+  color: white;
+  text-decoration: none; }
+
+a.arrowLink {
+  text-transform: uppercase;
+  color: #33ccff;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  background: url(../../assets/back_arrow.png) 0 2px no-repeat;
+  padding-left: 20px;
+  background-size: 12px 12px; }
 
 div.aligner {
   margin: 0 auto;
@@ -47,7 +58,7 @@ header {
   height: 95px; }
   header figure {
     position: absolute;
-    top: 3px;
+    top: 5px;
     right: 0;
     margin-right: 0; }
     header figure img {
@@ -82,18 +93,6 @@ header {
     header nav ul.mobile li {
       list-style: none;
       margin: 0; }
-      header nav ul.mobile li a {
-        text-transform: uppercase;
-        color: #33ccff;
-        text-decoration: none;
-        font-size: 14px;
-        cursor: pointer; }
-        header nav ul.mobile li a:before {
-          content: "< ";
-          display: block;
-          float: left;
-          margin: -1px 0 0 0;
-          padding-right: 10px; }
   header nav ul.screen {
     margin: 0;
     padding: 0 70px 0 0; }
@@ -128,15 +127,17 @@ main h1, main h2 {
   color: #33ccff; }
   @media screen and (max-width: 720px) {
     main h1, main h2 {
-      font-size: 32px;
-      line-height: 36px; } }
+      font-size: 28px;
+      line-height: 32px; } }
 main h2 {
   font: 400 24px/40px "Helvetica Neue"; }
 main section.body, main section.body-short {
   margin-top: 60px; }
   @media screen and (max-width: 720px) {
     main section.body, main section.body-short {
-      margin-top: 30px; } }
+      margin-top: 20px; }
+      main section.body h1, main section.body-short h1, main section.body h2, main section.body-short h2 {
+        margin: 20px 0 30px 0; } }
 main section.body-short {
   width: 100%;
   max-width: 800px; }
@@ -249,8 +250,9 @@ nav.boxes-items {
     cursor: pointer; }
     nav.boxes-items ul li {
       overflow: hidden; }
-      nav.boxes-items ul li:hover div.overlay {
-        opacity: 0.8; }
+      @media screen and (min-width: 580px) {
+        nav.boxes-items ul li:hover div.overlay {
+          opacity: 0.8; } }
       nav.boxes-items ul li div.overlay {
         background-color: #33ccff;
         opacity: 0;
@@ -438,6 +440,7 @@ section.contact {
   -o-transition: 0.3s ease-out height;
   transition: 0.3s ease-out height;
   font: 100 50px/52px "Helvetica Neue", "Helvetica";
+  font-weight: 200;
   font-size: 18px;
   color: #33ccff;
   overflow: hidden;

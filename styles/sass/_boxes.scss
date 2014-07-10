@@ -115,8 +115,10 @@ nav.boxes-items {
       overflow: hidden;
 
       &:hover {
-        div.overlay {
-          opacity: 0.8;
+        @media screen and (min-width: 580px) {
+          div.overlay {
+            opacity: 0.8;
+          }
         }
       }
 

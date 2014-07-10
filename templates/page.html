@@ -16,7 +16,7 @@
 
             <nav>
                 <ul ng-show="content.activeSlide != 0 || !backButtonText" class="mobile">
-                    <li><a ng-click="goBack()">{{backButtonText}}</a></li>
+                    <li><a class="arrowLink" ng-click="goBack()">{{backButtonText}}</a></li>
                 </ul>
 
                 <ul class="screen">
@@ -28,11 +28,10 @@
                 </ul>
             </nav>
 
-            <figure><a href="#/" ng-click="content.activeSlide = 0"><img src="assets/logo.png" alt="Room24 logo"/></a></figure>
+            <figure><a href="#/"><img src="assets/logo.png" alt="Room24 logo"/></a></figure>
 
             <strong ng-show="network.error">{{network.error}}</strong>
             <strong ng-show="network.active">Loading...</strong>
-
         </header>
     </div>
     <main id="sub-view" ui-view>

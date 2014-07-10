@@ -6,7 +6,18 @@ body {
   margin: 0;
 }
 
-a { color: $text-menu-highlight-color; }
+a { color: $text-menu-highlight-color; text-decoration: none; }
+
+a.arrowLink {
+  text-transform: uppercase;
+  color: #33ccff;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  background: url(../../assets/back_arrow.png) 0 2px no-repeat;
+  padding-left: 20px;
+  background-size: 12px 12px;
+}
 
 div.aligner {
   @include clearFix();
@@ -30,7 +41,7 @@ header {
 
   figure {
     position: absolute;
-    top: 3px;
+    top: 5px;
     right: 0;
     margin-right: 0;
 
@@ -80,22 +91,6 @@ header {
       li {
         list-style: none;
         margin: 0;
-
-        a {
-          text-transform: uppercase;
-          color: #33ccff;
-          text-decoration: none;
-          font-size: 14px;
-          cursor: pointer;
-
-          &:before {
-            content: "< ";
-            display: block;
-            float: left;
-            margin: -1px 0 0 0;
-            padding-right: 10px;
-          }
-        }
       }
     }
 
@@ -148,8 +143,8 @@ main {
     color: $text-header-color;
 
     @media screen and (max-width:720px) {
-      font-size: 32px;
-      line-height: 36px;
+      font-size: 28px;
+      line-height: 32px;
     }
   }
 
@@ -162,7 +157,10 @@ main {
     margin-top: 60px;
 
     @media screen and (max-width:720px) {
-      margin-top: 30px;
+      margin-top: 20px;
+      h1 {
+        margin: 20px 0 30px 0;
+      }
     }
   }
 

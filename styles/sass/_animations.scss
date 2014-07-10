@@ -15,6 +15,7 @@
 section.contact {
   @include vendor-prefix(transition, 0.3s ease-out height);
   font: $font-thin;
+  font-weight: 200;
   font-size: 18px;
   color: $text-header-color;
   overflow: hidden;
