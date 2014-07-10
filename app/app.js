@@ -11,10 +11,14 @@ var app = angular.module('Room24', [
 ]);
 
 app.
-    run(function() {
+    run(function($rootScope, $templateCache) {
         if ( !/(iPad|iPhone|iPod)/g.test( navigator.userAgent ) ) {
             angular.element(document.getElementsByTagName('body')[0]).addClass('play-free');
         }
+
+		$rootScope.$on('$viewContentLoaded', function() {
+			$templateCache.removeAll();
+		});
     }).
     constant('API_URI', 'static/content.live.json').
 
